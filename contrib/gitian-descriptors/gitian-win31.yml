@@ -1,0 +1,61 @@
+---
+name: "sterlingcoin"
+suites:
+- "precise"
+architectures:
+- "amd64"
+packages:
+- "mingw-w64"
+- "g++-mingw-w64"
+- "git-core"
+- "unzip"
+- "nsis"
+- "faketime"
+reference_datetime: "2011-01-30 00:00:00"
+remotes:
+- "url": "https://github.com/classicsxdx/sterlingcoin.git"
+  "dir": "sterlingcoin"
+files:
+- "qt-win32-4.8.3-gitian-r4.zip"
+- "boost-win32-1.55.0-gitian-r6.zip"
+- "bitcoin-deps-win32-gitian-r9.zip"
+script: |
+  #
+  STAGING=$HOME/staging
+  HOST=i686-w64-mingw32
+  #
+  mkdir -p $STAGING
+  cd $STAGING
+  unzip ../build/qt-win32-4.8.3-gitian-r4.zip
+  unzip ../build/boost-win32-1.55.0-gitian-r6.zip
+  unzip ../build/bitcoin-deps-win32-gitian-r9.zip
+  cd $HOME/build/
+  #
+  cd sterlingcoin
+  cd src/leveldb
+  chmod 755 build_detect_platform
+  cd ..
+  cd ..
+  export PATH=$STAGING/host/bin:$PATH
+  mkdir -p $OUTDIR/src
+  git archive HEAD | tar -x -C $OUTDIR/src
+  cp $OUTDIR/src/doc/README_windows.txt $OUTDIR/readme.txt
+  cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
+  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  export FAKETIME=$REFERENCE_DATETIME
+  export TZ=UTC
+  cd src
+  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING sterlingcoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=sterlingcoin" USE_SSE2=1
+  $HOST-strip sterlingcoind.exe
+  mkdir $OUTDIR/daemon
+  cp sterlingcoind.exe $OUTDIR/daemon
+  cd ..
+  mkdir nsis
+  git archive HEAD | tar -x -C nsis
+  cd nsis/src
+  mkdir ../release
+  cp ../../release/* ../release/
+  cp ../../src/*.exe .
+  makensis ../share/setup.nsi
+  cp ../share/sterlingcoin-*-win32-setup.exe $OUTDIR/
+
