@@ -273,7 +273,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/allocators.h \
     src/ui_interface.h \
     src/qt/rpcconsole.h \
-    src/qt/serveur.h \
     src/qt/qcustomplot.h \
     src/qt/poolbrowser.h \
     src/version.h \
@@ -364,7 +363,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/qtipcserver.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
-    src/qt/serveur.cpp \
     src/qt/poolbrowser.cpp \
     src/noui.cpp \
     src/kernel.cpp \
