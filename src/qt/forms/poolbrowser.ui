@@ -13,8 +13,75 @@
     <height>509</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
    <string>Digging</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -128,11 +195,14 @@
      <property name="layoutDirection">
       <enum>Qt::LeftToRight</enum>
      </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
      <property name="styleSheet">
-      <string notr="true">#All QTabBar::tab {border:none;height:80px;margin-top:-20px;padding-bottom:20px;padding-right:60px;margin-left:-20px}
-QTabWidget::tab-bar {alignment:center;border:0px;}
-QTabWidget::pane {border:none;}
-#tab QTabWidget::pane,#tab_3 QTabWidget::pane,#tab_4 QTabWidget::pane, #tab_2 QTabWidget::pane {border:none;border-left:1px solid #95a5a6;}</string>
+      <string notr="true">#All QTabBar::tab {background:#8a8a8a;border:none;height:80px;margin-top:-20px;padding-bottom:20px;padding-right:60px;margin-left:-20px}
+QTabWidget::tab-bar {alignment:center;border:0px;background:#8a8a8a;}
+QTabWidget::pane {border:none;background:#8a8a8a;}
+#tab QTabWidget::pane,#tab_3 QTabWidget::pane,#tab_4 QTabWidget::pane, #tab_2 QTabWidget::pane {border:none;border-left:1px solid #95a5a6;background:#8a8a8a;}</string>
      </property>
      <property name="tabPosition">
       <enum>QTabWidget::West</enum>
@@ -153,8 +223,11 @@ QTabWidget::pane {border:none;}
       <bool>true</bool>
      </property>
      <widget class="QWidget" name="tabBittrex">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background:#8a8a8a;</string>
       </property>
       <attribute name="icon">
        <iconset>
@@ -276,9 +349,9 @@ QTabWidget::pane {border:none;}
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">QTabBar:tab {height:20px;background:none;color:white;margin:0px;margin-right:10px;text-align:center;padding:2px;border-radius:3px;font-style:italic;width:80px;font-size:12px;margin-bottom:10px;}
-QTabWidget::tab-bar {alignment:right;border:0px;}
-QTabBar::tab:last {margin-right:100px;}</string>
+        <string notr="true">QTabBar:tab {height:20px;background:#8a8a8a;color:white;margin:0px;margin-right:10px;text-align:center;padding:2px;border-radius:3px;font-style:italic;width:80px;font-size:12px;margin-bottom:10px;}
+QTabWidget::tab-bar {alignment:right;border:0px;background:#8a8a8a;}
+QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
        </property>
        <property name="tabPosition">
         <enum>QTabWidget::North</enum>
@@ -299,8 +372,11 @@ QTabBar::tab:last {margin-right:100px;}</string>
         <bool>true</bool>
        </property>
        <widget class="QWidget" name="qWidgetBittrexMarketData">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
-         <string notr="true">border:none;</string>
+         <string notr="true">border:none;background:#8a8a8a;</string>
         </property>
         <attribute name="icon">
          <iconset resource="../bitcoin.qrc">
@@ -324,9 +400,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -342,18 +418,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -380,9 +456,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -398,18 +474,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -436,9 +512,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="WindowText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -454,18 +530,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <colorrole role="Text">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="ButtonText">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>97</red>
-               <green>105</green>
-               <blue>108</blue>
+               <red>90</red>
+               <green>104</green>
+               <blue>118</blue>
               </color>
              </brush>
             </colorrole>
@@ -496,8 +572,11 @@ QTabBar::tab:last {margin-right:100px;}</string>
            <pointsize>-1</pointsize>
           </font>
          </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
          <property name="styleSheet">
-          <string notr="true">Font-family:Myriad Pro;color:#61696c;font-size:12px;</string>
+          <string notr="true">Font-family:Myriad Pro;color:#5a6876;font-size:12px;background:#8a8a8a;</string>
          </property>
          <widget class="QWidget" name="qWidgetBittrexAsk" native="true">
           <property name="geometry">
@@ -514,9 +593,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -532,18 +611,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -570,9 +649,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -588,18 +667,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -626,9 +705,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -644,18 +723,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -698,9 +777,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -716,18 +795,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -754,9 +833,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -772,18 +851,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -810,9 +889,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -828,18 +907,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -868,7 +947,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Ask&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Ask&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="lblBittrexAskBtc">
@@ -886,9 +965,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -904,18 +983,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -942,9 +1021,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -960,18 +1039,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -998,9 +1077,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1016,18 +1095,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1056,7 +1135,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>B0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;B0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1077,9 +1156,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1095,18 +1174,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1133,9 +1212,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1151,18 +1230,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1189,9 +1268,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1207,18 +1286,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1247,7 +1326,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>$0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1269,9 +1348,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1287,18 +1366,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1325,9 +1404,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1343,18 +1422,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1381,9 +1460,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1399,18 +1478,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -1450,9 +1529,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1468,18 +1547,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1506,9 +1585,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1524,18 +1603,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1562,9 +1641,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1580,18 +1659,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1620,7 +1699,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Bid&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Bid&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="lblBittrexBidBtc">
@@ -1638,9 +1717,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1656,18 +1735,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1694,9 +1773,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1712,18 +1791,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1750,9 +1829,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1768,18 +1847,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1805,7 +1884,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             </palette>
            </property>
            <property name="text">
-            <string>B0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;B0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -1826,9 +1905,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1844,18 +1923,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1882,9 +1961,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1900,18 +1979,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1938,9 +2017,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1956,18 +2035,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1993,7 +2072,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             </palette>
            </property>
            <property name="text">
-            <string>$0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -2015,9 +2094,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2033,18 +2112,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2071,9 +2150,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2089,18 +2168,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2127,9 +2206,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2145,18 +2224,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2199,9 +2278,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2217,18 +2296,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2255,9 +2334,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2273,18 +2352,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2311,9 +2390,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2329,18 +2408,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2369,7 +2448,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Last&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Last&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="lblBittrexLastBtc">
@@ -2387,9 +2466,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2405,18 +2484,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2443,9 +2522,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2461,18 +2540,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2499,9 +2578,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2517,18 +2596,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2557,7 +2636,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>B0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;B0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -2578,9 +2657,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2596,18 +2675,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2634,9 +2713,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2652,18 +2731,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2690,9 +2769,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="WindowText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2708,18 +2787,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
               <colorrole role="Text">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="ButtonText">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>97</red>
-                 <green>105</green>
-                 <blue>108</blue>
+                 <red>90</red>
+                 <green>104</green>
+                 <blue>118</blue>
                 </color>
                </brush>
               </colorrole>
@@ -2748,7 +2827,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>$0.00000000</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -2770,9 +2849,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2788,18 +2867,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2826,9 +2905,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2844,18 +2923,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2882,9 +2961,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2900,18 +2979,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -2940,7 +3019,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            <string notr="true">font-weight:600;font-size:17px;</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;0.00%&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;0.00%&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -2978,9 +3057,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
            <bool>true</bool>
           </property>
           <property name="styleSheet">
-           <string notr="true">QScrollBar:vertical {margin-top:22px;background: #95a5a6;}QScrollBar::handle:vertical {background: #703030;min-width: 10px;min-height:20px;}QScrollBar::add-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar::sub-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {background: none;} QTreeWidget {background:#d3d6d8;}
+           <string notr="true">QScrollBar:vertical {margin-top:22px;background: #ffffff;}QScrollBar::handle:vertical {background: #b2b2b2;min-width: 10px;min-height:20px;}QScrollBar::add-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar::sub-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {background: none;} QTreeWidget {background:#ffffff;}
  QHeaderView::section {
-     background-color: #f2594b;
+     background-color: #5a6876;
      padding-left: 15px;
      border: 0px;
 	height:22px;
@@ -3088,9 +3167,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3106,18 +3185,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3144,9 +3223,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3162,18 +3241,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3200,9 +3279,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3218,18 +3297,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3255,7 +3334,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Volume ARCH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Volume SLG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexVolumeSc">
@@ -3273,9 +3352,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3291,18 +3370,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3329,9 +3408,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3347,18 +3426,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3385,9 +3464,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3403,18 +3482,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3440,7 +3519,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>000000.00000000</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;000000.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexVolumeBtcHeader">
@@ -3458,9 +3537,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3476,18 +3555,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3514,9 +3593,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3532,18 +3611,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3570,9 +3649,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3588,18 +3667,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3625,7 +3704,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Volume BTC&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Volume BTC&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexVolumeBtc">
@@ -3643,9 +3722,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3661,18 +3740,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3699,9 +3778,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3717,18 +3796,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3755,9 +3834,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3773,18 +3852,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3810,7 +3889,11 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>0000.00000000</string>
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Myriad Pro'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;0000.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexVolumeUsdHeader">
@@ -3828,9 +3911,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3846,18 +3929,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3884,9 +3967,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3902,18 +3985,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3940,9 +4023,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3958,18 +4041,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -3995,7 +4078,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Volume USD&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Volume USD&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexHigh">
@@ -4013,9 +4096,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4031,18 +4114,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4069,9 +4152,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4087,18 +4170,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4125,9 +4208,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4143,18 +4226,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4180,7 +4263,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;High&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;High&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexVolumeUsd">
@@ -4198,9 +4281,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4216,18 +4299,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4254,9 +4337,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4272,18 +4355,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4310,9 +4393,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4328,18 +4411,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4365,7 +4448,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>00000.00</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;00000.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexHighBtc">
@@ -4383,9 +4466,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4401,18 +4484,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4439,9 +4522,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4457,18 +4540,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4495,9 +4578,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4513,18 +4596,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4550,7 +4633,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>0.000000000</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;0.000000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexLow">
@@ -4568,9 +4651,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4586,18 +4669,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4624,9 +4707,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4642,18 +4725,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4680,9 +4763,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4698,18 +4781,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4735,7 +4818,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Low&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Low&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexLowBtc">
@@ -4753,9 +4836,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4771,18 +4854,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4809,9 +4892,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4827,18 +4910,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4865,9 +4948,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4883,18 +4966,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -4920,7 +5003,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </palette>
           </property>
           <property name="text">
-           <string>0.000000000</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;0.000000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QFrame" name="imgBittrexSell">
@@ -4947,8 +5030,11 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <height>22</height>
            </size>
           </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">background-color:#f2594b;</string>
+           <string notr="true">background-color:#5a6876;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexBuyHeader">
@@ -4991,8 +5077,11 @@ QTabBar::tab:last {margin-right:100px;}</string>
             <height>22</height>
            </size>
           </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">background-color:#7cc576;</string>
+           <string notr="true">background-color:#5a6876;</string>
           </property>
          </widget>
          <widget class="QTreeWidget" name="qTreeWidgetBittrexBuy">
@@ -5005,9 +5094,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QScrollBar:vertical {margin-top:22px;background: #95a5a6;}QScrollBar::handle:vertical {background: #4e8e81;max-width: 5px;min-height:20px;}QScrollBar::add-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar::sub-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {background: none;} QTreeWidget {background:#d3d6d8;}
+           <string notr="true">QScrollBar:vertical {margin-top:22px;background: #ffffff;}QScrollBar::handle:vertical {background: #b2b2b2;max-width: 5px;min-height:20px;}QScrollBar::add-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar::sub-line:vertical {width: 0px;subcontrol-position: top left;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {background: none;} QTreeWidget {background:#ffffff;}
  QHeaderView::section {
-     background-color: #7cc576;
+     background-color: #5a6876;
      padding-left: 15px;
      border: 0px;
 	height:22px;
@@ -5093,9 +5182,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5111,18 +5200,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5149,9 +5238,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5167,18 +5256,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5205,9 +5294,9 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5223,18 +5312,18 @@ QTabBar::tab:last {margin-right:100px;}</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5270,7 +5359,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
 font-colour:#ffffff;</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;BITTREX&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;color:#ffffff;&quot;&gt;BITTREX&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexChange">
@@ -5288,9 +5377,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5306,18 +5395,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5344,9 +5433,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5362,18 +5451,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5400,9 +5489,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5418,18 +5507,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5455,7 +5544,7 @@ font-colour:#ffffff;</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Change&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#ffffff;&quot;&gt;Change&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexCloseBtc">
@@ -5473,9 +5562,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5491,18 +5580,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5529,9 +5618,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5547,18 +5636,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5585,9 +5674,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5603,18 +5692,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5640,7 +5729,7 @@ font-colour:#ffffff;</string>
            </palette>
           </property>
           <property name="text">
-           <string>0.000000000</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;0.000000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexClose">
@@ -5658,9 +5747,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5676,18 +5765,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5714,9 +5803,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5732,18 +5821,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5770,9 +5859,9 @@ font-colour:#ffffff;</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5788,18 +5877,18 @@ font-colour:#ffffff;</string>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>97</red>
-                <green>105</green>
-                <blue>108</blue>
+                <red>90</red>
+                <green>104</green>
+                <blue>118</blue>
                </color>
               </brush>
              </colorrole>
@@ -5825,7 +5914,7 @@ font-colour:#ffffff;</string>
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Close&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Close&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <zorder>qWidgetBittrexAsk</zorder>
@@ -5855,6 +5944,9 @@ font-colour:#ffffff;</string>
         </widget>
        </widget>
        <widget class="QWidget" name="qWidgetBittrexGraphs">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
          <string notr="true"/>
         </property>
@@ -5874,8 +5966,12 @@ font-colour:#ffffff;</string>
            <height>391</height>
           </rect>
          </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
          <property name="styleSheet">
-          <string notr="true">Font-family:Myriad Pro;color:#61696c;font-size:12px;</string>
+          <string notr="true">Font-family:Myriad Pro;color:#5a6876;font-size:12px;
+background-color: #b2b2b2;</string>
          </property>
          <widget class="QScrollArea" name="scrollAreaBittrex">
           <property name="geometry">
@@ -5886,8 +5982,11 @@ font-colour:#ffffff;</string>
             <height>381</height>
            </rect>
           </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
           <property name="styleSheet">
-           <string notr="true">QScrollBar:horizontal {background: white;height: 15px;margin: 0px 0px 0 0px;}QScrollBar::handle:horizontal {background: #95a5a6;min-width: 20px;}QScrollBar::add-line:horizontal {width: 0px;subcontrol-position: top right;}QScrollBar::sub-line:horizontal {width: 0px;subcontrol-position: top right;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {background: none;}</string>
+           <string notr="true">QScrollBar:horizontal {background: white;height: 15px;margin: 0px 0px 0 0px;}QScrollBar::handle:horizontal {background: #5a6876;min-width: 20px;}QScrollBar::add-line:horizontal {width: 0px;subcontrol-position: top right;}QScrollBar::sub-line:horizontal {width: 0px;subcontrol-position: top right;}QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {width: 0px;height: 0px;}QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {background: none;}</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::NoFrame</enum>
@@ -5904,7 +6003,7 @@ font-colour:#ffffff;</string>
           <widget class="QWidget" name="scrollAreaWidgetContentsBittrex">
            <property name="geometry">
             <rect>
-             <x>0</x>
+             <x>-1094</x>
              <y>0</y>
              <width>1635</width>
              <height>363</height>
@@ -5915,6 +6014,9 @@ font-colour:#ffffff;</string>
              <width>1635</width>
              <height>0</height>
             </size>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -5927,6 +6029,9 @@ font-colour:#ffffff;</string>
               <width>311</width>
               <height>21</height>
              </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
             </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Price chart, &lt;/span&gt;last 50 trades - Satoshi/trade&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -5941,6 +6046,9 @@ font-colour:#ffffff;</string>
               <height>311</height>
              </rect>
             </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
             <property name="styleSheet">
              <string notr="true"/>
             </property>
@@ -5953,6 +6061,9 @@ font-colour:#ffffff;</string>
               <width>531</width>
               <height>311</height>
              </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
             </property>
             <property name="styleSheet">
              <string notr="true"/>
@@ -5967,6 +6078,9 @@ font-colour:#ffffff;</string>
               <height>20</height>
              </rect>
             </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
             <property name="text">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Order depth &lt;/span&gt;- Volume/Satoshi&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -5979,6 +6093,9 @@ font-colour:#ffffff;</string>
               <width>521</width>
               <height>331</height>
              </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
             </property>
             <property name="styleSheet">
              <string notr="true">QScrollBar:vertical {background: white;height: 15px;}QScrollBar::handle:vertical {background: #d3d6d8;min-width: 20px;}</string>
@@ -6467,6 +6584,12 @@ font-colour:#ffffff;</string>
        </disabled>
       </palette>
      </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(138, 138, 138);</string>
+     </property>
      <widget class="QPushButton" name="btnUpdateMarketData">
       <property name="geometry">
        <rect>
@@ -6662,6 +6785,12 @@ font-colour:#ffffff;</string>
         <italic>true</italic>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
       </property>
       <property name="styleSheet">
        <string notr="true">color:white;margin:0px;text-align:center;padding:2px;border-radius:3px;font-style:italic;width:100px;font-size:14px;font-family:calibri;font-weight:600;</string>
@@ -7104,8 +7233,11 @@ font-colour:#ffffff;</string>
         </disabled>
        </palette>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#767676;&quot;&gt;Convert Sterlingcoin:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Convert Sterlingcoin:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="txtConvertSilkcoinQty">
@@ -7129,8 +7261,12 @@ font-colour:#ffffff;</string>
         <height>16777215</height>
        </size>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
+       <string notr="true">border: 1px solid #5a6876;margin-left:4px;
+background-color: rgb(255, 255, 255);</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btnConvertSilkoin">
@@ -7148,8 +7284,14 @@ font-colour:#ffffff;</string>
         <height>23</height>
        </size>
       </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">border:1px solid #61696c;background:white;font-weight:600;</string>
+       <string notr="true">border:1px solid #5a6876;background:white;font-weight:600;</string>
       </property>
       <property name="text">
        <string>=</string>
@@ -7160,7 +7302,7 @@ font-colour:#ffffff;</string>
        <rect>
         <x>370</x>
         <y>0</y>
-        <width>201</width>
+        <width>161</width>
         <height>41</height>
        </rect>
       </property>
@@ -7170,9 +7312,9 @@ font-colour:#ffffff;</string>
          <colorrole role="WindowText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7188,18 +7330,18 @@ font-colour:#ffffff;</string>
          <colorrole role="Text">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="ButtonText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7226,9 +7368,9 @@ font-colour:#ffffff;</string>
          <colorrole role="WindowText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7244,18 +7386,18 @@ font-colour:#ffffff;</string>
          <colorrole role="Text">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="ButtonText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7282,9 +7424,9 @@ font-colour:#ffffff;</string>
          <colorrole role="WindowText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7300,18 +7442,18 @@ font-colour:#ffffff;</string>
          <colorrole role="Text">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
          <colorrole role="ButtonText">
           <brush brushstyle="SolidPattern">
            <color alpha="255">
-            <red>97</red>
-            <green>105</green>
-            <blue>108</blue>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
            </color>
           </brush>
          </colorrole>
@@ -7336,8 +7478,11 @@ font-colour:#ffffff;</string>
         </disabled>
        </palette>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">color:#61696c;</string>
+       <string notr="true">color:#ffffff;</string>
       </property>
       <property name="text">
        <string>£0.0000 / B0.00000000</string>
@@ -7346,7 +7491,7 @@ font-colour:#ffffff;</string>
      <widget class="QLabel" name="iconOverviewUpdateWait">
       <property name="geometry">
        <rect>
-        <x>660</x>
+        <x>700</x>
         <y>0</y>
         <width>21</width>
         <height>41</height>
@@ -7767,8 +7912,11 @@ font-colour:#ffffff;</string>
         </disabled>
        </palette>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/icons/transaction_2&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>

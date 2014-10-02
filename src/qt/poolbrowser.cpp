@@ -42,11 +42,11 @@ PoolBrowser::PoolBrowser(QWidget* parent) : QWidget(parent), ui(new Ui::PoolBrow
     setFixedSize(400, 420);
 
     ui->qCustomPlotBittrexTrades->addGraph();
-    ui->qCustomPlotBittrexTrades->setBackground(QBrush(QColor("#edf1f7")));
+    ui->qCustomPlotBittrexTrades->setBackground(QBrush(QColor("#b2b2b2")));
 
     ui->qCustomPlotBittrexOrderDepth->addGraph();
     ui->qCustomPlotBittrexOrderDepth->addGraph();
-    ui->qCustomPlotBittrexOrderDepth->setBackground(QBrush(QColor("#edf1f7")));
+    ui->qCustomPlotBittrexOrderDepth->setBackground(QBrush(QColor("#b2b2b2")));
 
 
     QObject::connect(&m_nam, SIGNAL(finished(QNetworkReply*)), this, SLOT(parseNetworkResponse(QNetworkReply*)), Qt::AutoConnection);
