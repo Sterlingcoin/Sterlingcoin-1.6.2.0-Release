@@ -3148,6 +3148,11 @@ for example: alertnotify=echo %%s | mail -s &quot;sterlingcoin Alert&quot; admin
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>No es posible escuchar en el %s en este ordenador (bind returned error %d, %s)</translation>
     </message>
+     <message>
+        <location line="+55"/>
+        <source>Find peers using internet relay chat (default: 1)</source>
+        <translation>Find peers using internet relay chat (default: 1)</translation>
+    </message>
     <message>
         <location line="-130"/>
         <source>Connect through socks proxy</source>

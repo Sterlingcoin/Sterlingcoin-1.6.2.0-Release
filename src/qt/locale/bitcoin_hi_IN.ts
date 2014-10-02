@@ -3129,6 +3129,11 @@ for example: alertnotify=echo %%s | mail -s &quot;sterlingcoin Alert&quot; admin
         <source>Connect through socks proxy</source>
         <translation type="unfinished"/>
     </message>
+     <message>
+        <location line="+55"/>
+        <source>Find peers using internet relay chat (default: 1)</source>
+        <translation>Find peers using internet relay chat (default: 1)</translation>
+    </message>
     <message>
         <location line="+3"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>

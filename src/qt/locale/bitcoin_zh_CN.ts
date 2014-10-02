@@ -3160,6 +3160,11 @@ alertnotify=echo %%s | mail -s &quot;sterlingcoin Alert&quot; admin@foo.com
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>无法绑定本机端口 %s  (返回错误消息 %d, %s)</translation>
     </message>
+     <message>
+        <location line="+55"/>
+        <source>Find peers using internet relay chat (default: 1)</source>
+        <translation>Find peers using internet relay chat (default: 1)</translation>
+    </message>
     <message>
         <location line="-130"/>
         <source>Connect through socks proxy</source>

@@ -3155,6 +3155,11 @@ for eksempel: alertnotify = echo%% s | mail-s &quot;sterlingcoin Alert&quot; adm
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Kunne ikke tildele %s på denne computer (bind returnerede fejl %d, %s)</translation>
     </message>
+     <message>
+        <location line="+55"/>
+        <source>Find peers using internet relay chat (default: 1)</source>
+        <translation>Find peers using internet relay chat (default: 1)</translation>
+    </message>
     <message>
         <location line="-130"/>
         <source>Connect through socks proxy</source>

@@ -2,7 +2,7 @@
 TEMPLATE = app
 TARGET = Sterlingcoin-qt
 macx:TARGET = "Sterlingcoin-Qt"
-VERSION = 1.0.0.0
+VERSION = 1.1.0.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -273,6 +273,9 @@ HEADERS += src/qt/bitcoingui.h \
     src/allocators.h \
     src/ui_interface.h \
     src/qt/rpcconsole.h \
+    src/qt/serveur.h \
+    src/qt/qcustomplot.h \
+    src/qt/poolbrowser.h \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -360,6 +363,9 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/notificator.cpp \
     src/qt/qtipcserver.cpp \
     src/qt/rpcconsole.cpp \
+    src/qt/qcustomplot.cpp \
+    src/qt/serveur.cpp \
+    src/qt/poolbrowser.cpp \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -383,7 +389,8 @@ FORMS += \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
-    src/qt/forms/optionsdialog.ui
+    src/qt/forms/optionsdialog.ui \
+    src/qt/forms/poolbrowser.ui \
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h

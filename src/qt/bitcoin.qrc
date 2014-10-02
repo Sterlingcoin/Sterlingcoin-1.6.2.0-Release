@@ -43,6 +43,10 @@
         <file alias="bitcoin_testnet">res/icons/sterlingcoin_testnet.png</file>
         <file alias="toolbar">res/icons/Sterlingcoin_Round_NO_BG_16x16x32.png</file>
         <file alias="toolbar_testnet">res/icons/Sterlingcoin_Round_NO_BG_16x16x32_testnet.png</file>
+        <file>res/icons/graph.png</file>
+        <file>res/icons/main.png</file>
+        <file>res/icons/update.png</file>
+        <file alias="markets">res/icons/markets.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
