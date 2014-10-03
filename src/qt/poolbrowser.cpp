@@ -61,7 +61,7 @@ void PoolBrowser::on_btnConvertSilkoin_clicked()
     double totalBtc = _bittrexMarketSummary->getLastCurrent(double()) * silkcoinQty;
     double totalUsd = totalBtc * _dBtcPriceCurrent;
 
-    ui->lblConvertSilkcoinResults->setText("£" + QString::number(totalUsd, 'f', 2) +
+    ui->lblConvertSilkcoinResults->setText("$" + QString::number(totalUsd, 'f', 2) +
                                            "  /  B"+ QString::number(totalBtc, 'f', 8));
 
 }
@@ -149,7 +149,7 @@ void PoolBrowser::coinbasePrice(QNetworkReply* response)
 
     mObject jsonObject = jsonResponse.get_obj();
 
-    _dBtcPriceCurrent =  QString::fromStdString(getPairValue(jsonObject, "btc_to_gbp").get_str()).toDouble();
+    _dBtcPriceCurrent =  QString::fromStdString(getPairValue(jsonObject, "btc_to_usd").get_str()).toDouble();
 
     _dBtcPriceLast = _dBtcPriceCurrent;
     _dScPriceLast = _dBtcPriceCurrent * _bittrexMarketSummary->getLastCurrent(double());
