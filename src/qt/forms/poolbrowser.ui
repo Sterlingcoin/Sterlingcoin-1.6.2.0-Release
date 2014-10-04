@@ -98,6 +98,12 @@
    </property>
    <item row="3" column="0">
     <widget class="QWidget" name="widgetConversion" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
      <property name="minimumSize">
       <size>
        <width>0</width>
@@ -530,12 +536,12 @@
        <rect>
         <x>540</x>
         <y>0</y>
-        <width>181</width>
+        <width>171</width>
         <height>41</height>
        </rect>
       </property>
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -752,6 +758,12 @@
         <width>151</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="palette">
        <palette>
@@ -1184,6 +1196,12 @@
         <height>23</height>
        </rect>
       </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="minimumSize">
        <size>
         <width>100</width>
@@ -1213,6 +1231,12 @@ background-color: rgb(255, 255, 255);</string>
         <height>23</height>
        </rect>
       </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -1240,6 +1264,12 @@ background-color: rgb(255, 255, 255);</string>
         <width>171</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="palette">
        <palette>
@@ -1431,6 +1461,12 @@ background-color: rgb(255, 255, 255);</string>
         <width>21</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="palette">
        <palette>
@@ -2011,6 +2047,12 @@ QTabWidget::pane {border:none;background:#8a8a8a;}
          <height>431</height>
         </rect>
        </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="palette">
         <palette>
          <active>
@@ -2126,7 +2168,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
         <enum>QTabWidget::Rounded</enum>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="iconSize">
         <size>
@@ -7900,6 +7942,12 @@ p, li { white-space: pre-wrap; }
            <height>391</height>
           </rect>
          </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -7915,6 +7963,12 @@ background-color: #b2b2b2;</string>
             <width>541</width>
             <height>381</height>
            </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
           </property>
           <property name="autoFillBackground">
            <bool>true</bool>
@@ -7963,6 +8017,12 @@ background-color: #b2b2b2;</string>
               <width>311</width>
               <height>21</height>
              </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
             <property name="palette">
              <palette>
@@ -8152,6 +8212,12 @@ background-color: #b2b2b2;</string>
               <height>311</height>
              </rect>
             </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -8168,6 +8234,12 @@ background-color: #b2b2b2;</string>
               <height>311</height>
              </rect>
             </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -8183,6 +8255,12 @@ background-color: #b2b2b2;</string>
               <width>211</width>
               <height>20</height>
              </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
             <property name="palette">
              <palette>
@@ -8371,6 +8449,12 @@ background-color: #b2b2b2;</string>
               <width>521</width>
               <height>331</height>
              </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
             <property name="autoFillBackground">
              <bool>true</bool>

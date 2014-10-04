@@ -9,6 +9,7 @@ class ClientModel;
 class WalletModel;
 class TransactionView;
 class OverviewPage;
+class BlockBrowser;
 class AddressBookPage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
@@ -68,6 +69,7 @@ private:
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     PoolBrowser *poolBrowser;
+    BlockBrowser *blockBrowser;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -79,6 +81,7 @@ private:
     QMenuBar *appMenuBar;
     QAction *overviewAction;
     QAction *poolAction;
+    QAction *blockAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
@@ -149,9 +152,10 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
-    
+    /** Switch to Bittrex feed*/
     void gotoPoolBrowser();
-    
+    /** Switch to block explorer*/
+    void gotoBlockBrowser();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */

@@ -275,6 +275,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
     src/qt/poolbrowser.h \
+    src/qt/blockbrowser.h \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -364,6 +365,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/poolbrowser.cpp \
+    src/qt/blockbrowser.cpp \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -389,6 +391,8 @@ FORMS += \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/poolbrowser.ui \
+    src/qt/forms/blockbrowser.ui \
+
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
