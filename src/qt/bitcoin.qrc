@@ -49,6 +49,7 @@
         <file>res/icons/bittrex-header.png</file>
         <file alias="markets">res/icons/markets.png</file>
         <file alias="block">res/icons/block.png</file>
+        <file>res/icons/explorer-header.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
