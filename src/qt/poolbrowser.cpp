@@ -60,7 +60,7 @@ void PoolBrowser::on_btnConvertSilkoin_clicked() {
     double totalBtc = _bittrexMarketSummary->getLastCurrent(double()) * silkcoinQty;
     double totalUsd = totalBtc * _dBtcPriceCurrent;
 
-    ui->lblConvertSilkcoinResults->setText("$" + QString::number(totalUsd, 'f', 2) +
+    ui->lblConvertSilkcoinResults->setText("£" + QString::number(totalUsd, 'f', 2) +
                                            "  /  B" + QString::number(totalBtc, 'f', 8));
 
 }
