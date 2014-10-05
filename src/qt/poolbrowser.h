@@ -73,7 +73,7 @@ public slots:
     void parseNetworkResponse(QNetworkReply* response);
 
 private slots:
-    void on_btnConvertSilkoin_clicked();
+    void on_btnConvertSterlingcoin_clicked();
     void on_btnUpdateMarketData_clicked();
 
 private:

@@ -750,7 +750,7 @@
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="lblConvertSilkcoin">
+     <widget class="QLabel" name="lblConvertSterlingcoin">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -1187,7 +1187,7 @@
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Convert Sterlingcoin:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="txtConvertSilkcoinQty">
+     <widget class="QLineEdit" name="txtConvertSterlingcoinQty">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -1222,7 +1222,7 @@
 background-color: rgb(255, 255, 255);</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertSilkoin">
+     <widget class="QPushButton" name="btnConvertSterlingcoin">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -1256,7 +1256,7 @@ background-color: rgb(255, 255, 255);</string>
        <string>=</string>
       </property>
      </widget>
-     <widget class="QLabel" name="lblConvertSilkcoinResults">
+     <widget class="QLabel" name="lblConvertSterlingcoinResults">
       <property name="geometry">
        <rect>
         <x>370</x>
