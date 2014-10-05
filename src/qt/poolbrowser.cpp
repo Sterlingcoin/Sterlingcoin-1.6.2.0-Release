@@ -55,16 +55,16 @@ PoolBrowser::PoolBrowser(QWidget* parent) : QWidget(parent), ui(new Ui::PoolBrow
     pollAPIs();
 }
 
-void PoolBrowser::on_btnConvertSilkoin_clicked()
-{
+void PoolBrowser::on_btnConvertSilkoin_clicked() {
     double silkcoinQty = ui->txtConvertSilkcoinQty->text().toDouble();
     double totalBtc = _bittrexMarketSummary->getLastCurrent(double()) * silkcoinQty;
-    double totalGbp = totalBtc * _dBtcPriceCurrent;
+    double totalUsd = totalBtc * _dBtcPriceCurrent;
 
-    ui->lblConvertSilkcoinResults->setText("£" + QString::number(totalGbp, 'f', 2) +
-                                           "  /  B"+ QString::number(totalBtc, 'f', 8));
+    ui->lblConvertSilkcoinResults->setText("$" + QString::number(totalUsd, 'f', 2) +
+                                           "  /  B" + QString::number(totalBtc, 'f', 8));
 
 }
+
 void PoolBrowser::on_btnUpdateMarketData_clicked()
 {
     pollAPIs();
