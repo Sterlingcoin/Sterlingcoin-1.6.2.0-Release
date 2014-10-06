@@ -750,7 +750,7 @@
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="lblConvertSterlingcoin">
+     <widget class="QLabel" name="lblConvertSilkcoin">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -2168,7 +2168,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
         <enum>QTabWidget::Rounded</enum>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <property name="iconSize">
         <size>
