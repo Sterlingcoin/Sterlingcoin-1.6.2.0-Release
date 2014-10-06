@@ -11,10 +11,6 @@
 
 #include <QDesktopServices>
 #include <QString>
-#include <QSslSocket>
-#include <QJsonArray>
-#include <QJsonObject>
-#include <QJsonValue>
 
 using namespace json_spirit;
 
@@ -27,6 +23,7 @@ const QString apiBittrexTrades = "http://bittrex.com/api/v1.1/public/getmarkethi
 const QString apiBittrexOrders = "http://bittrex.com/api/v1.1/public/getorderbook?market=BTC-SLG&type=both&depth=50";
 
 //Common Globals
+int mode=1;
 double _dScPriceLast = 0;
 double _dBtcPriceCurrent = 0;
 double _dBtcPriceLast = 0;
@@ -376,8 +373,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
 void PoolBrowser::bittrexTrades(QNetworkReply* response)
 {
     int z = 0;
-    double high; 
-    double low = 100000;
+    double high, low = 100000;
 
     ui->tblBittrexTrades->clear();
     ui->tblBittrexTrades->setColumnWidth(0, 60);

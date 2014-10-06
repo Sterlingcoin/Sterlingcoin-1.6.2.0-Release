@@ -3,7 +3,6 @@
 #include "bitcoinunits.h"
 
 #include "guiconstants.h"
-#include "poolbrowser.h"
 
 #include <QLabel>
 #include <QLineEdit>
@@ -16,10 +15,8 @@
 #include <qmath.h>
 
 BitcoinAmountField::BitcoinAmountField(QWidget *parent):
-        QWidget(parent), amount(0), currentUnit(-1), label_btc(0)
+        QWidget(parent), amount(0), currentUnit(-1)
 {   
-    label_btc = new QLabel(this);
-    label_btc->setText("");
     amount = new QDoubleSpinBox(this);
     amount->setLocale(QLocale::c());
     amount->setDecimals(8);
@@ -50,9 +47,6 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent):
 
 void BitcoinAmountField::setText(const QString &text)
 {
-    QString qsBtcPrice = _dBtcPriceCurrent > 0 ? (QString::number(amount->value() * (_dScPriceLast / _dBtcPriceCurrent))) : "0";
-    
-    label_btc->setText("Sending £" + (QString::number(amount->value() * _dScPriceLast)) + " or " + qsBtcPrice + " BTC at current market rate");
     if (text.isEmpty())
         amount->clear();
     else
