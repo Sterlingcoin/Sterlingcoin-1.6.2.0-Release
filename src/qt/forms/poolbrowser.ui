@@ -7893,6 +7893,32 @@ p, li { white-space: pre-wrap; }
 </string>
           </property>
          </widget>
+         <widget class="QLabel" name="lblOverviewBtcPrice">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>50</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Bitcoin Price:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblOverviewBtcUsdPrice">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>55</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>£1000.00</string>
+          </property>
+         </widget>
          <zorder>qWidgetBittrexAsk</zorder>
          <zorder>qWidgetBittrexBid</zorder>
          <zorder>qWidgetBittrexLast</zorder>
@@ -7917,6 +7943,8 @@ p, li { white-space: pre-wrap; }
          <zorder>lblBittrexCloseBtc</zorder>
          <zorder>lblBittrexClose</zorder>
          <zorder>widget</zorder>
+         <zorder>lblOverviewBtcPrice</zorder>
+         <zorder>lblOverviewBtcUsdPrice</zorder>
         </widget>
        </widget>
        <widget class="QWidget" name="qWidgetBittrexGraphs">

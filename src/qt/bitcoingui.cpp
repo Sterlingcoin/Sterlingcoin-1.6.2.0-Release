@@ -112,7 +112,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
     transactionView = new TransactionView(this);
-    QLabel *mylabel2 = new QLabel(this);
     vbox->addWidget(transactionView);
     transactionsPage->setLayout(vbox);
 

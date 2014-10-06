@@ -151,6 +151,12 @@ void PoolBrowser::coinbasePrice(QNetworkReply* response)
 
     _dBtcPriceCurrent =  QString::fromStdString(getPairValue(jsonObject, "btc_to_gbp").get_str()).toDouble();
 
+    updateLabel(ui->lblOverviewBtcUsdPrice,
+                    _dBtcPriceCurrent,
+                    _dBtcPriceLast,
+                    QString::fromUtf8("£"),
+                    2);
+
     _dBtcPriceLast = _dBtcPriceCurrent;
     _dScPriceLast = _dBtcPriceCurrent * _bittrexMarketSummary->getLastCurrent(double());
 }
