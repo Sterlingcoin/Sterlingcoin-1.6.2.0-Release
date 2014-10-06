@@ -5879,7 +5879,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;0000.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
-         <widget class="QLabel" name="lblBittrexVolumeUsdHeader">
+         <widget class="QLabel" name="lblBittrexVolumeGbpHeader">
           <property name="geometry">
            <rect>
             <x>350</x>
@@ -6061,7 +6061,7 @@ p, li { white-space: pre-wrap; }
            </palette>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Volume USD&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Volume GBP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="lblBittrexHigh">
@@ -6249,7 +6249,7 @@ p, li { white-space: pre-wrap; }
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;High&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
-         <widget class="QLabel" name="lblBittrexVolumeUsd">
+         <widget class="QLabel" name="lblBittrexVolumeGbp">
           <property name="geometry">
            <rect>
             <x>440</x>
@@ -7929,9 +7929,9 @@ p, li { white-space: pre-wrap; }
          <zorder>lblBittrexVolumeSc</zorder>
          <zorder>lblBittrexVolumeBtcHeader</zorder>
          <zorder>lblBittrexVolumeBtc</zorder>
-         <zorder>lblBittrexVolumeUsdHeader</zorder>
+         <zorder>lblBittrexVolumeGbpHeader</zorder>
          <zorder>lblBittrexHigh</zorder>
-         <zorder>lblBittrexVolumeUsd</zorder>
+         <zorder>lblBittrexVolumeGbp</zorder>
          <zorder>lblBittrexHighBtc</zorder>
          <zorder>lblBittrexLow</zorder>
          <zorder>lblBittrexLowBtc</zorder>

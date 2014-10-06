@@ -264,7 +264,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
                 QString("%"),
                 2);
 
-    updateLabel(ui->lblBittrexVolumeUsd,
+    updateLabel(ui->lblBittrexVolumeGbp,
                 _bittrexMarketSummary->getBaseVolumeCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getBaseVolumePrev(double()) * _dBtcPriceCurrent,
                 QString(""),
@@ -292,7 +292,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
     updateLabel(ui->lblBittrexLastUsd,
                 _bittrexMarketSummary->getLastCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getLastPrev(double()) * _dBtcPriceCurrent,
-                QString("$"),
+                QString::fromUtf8("£"),
                 8);
 
     updateLabel(ui->lblBittrexAskBtc,
@@ -304,7 +304,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
     updateLabel(ui->lblBittrexAskUsd,
                 _bittrexMarketSummary->getAskCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getAskPrev(double()) * _dBtcPriceCurrent,
-                QString("$"),
+                QString::fromUtf8("£"),
                 8);
 
     updateLabel(ui->lblBittrexBidBtc,
@@ -316,7 +316,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
     updateLabel(ui->lblBittrexBidUsd,
                 _bittrexMarketSummary->getBidCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getBidPrev(double()) * _dBtcPriceCurrent,
-                QString("$"),
+                QString::fromUtf8("£"),
                 8);
 
     _bittrexMarketSummary->setAskPrev(_bittrexMarketSummary->getAskCurrent(double()));
