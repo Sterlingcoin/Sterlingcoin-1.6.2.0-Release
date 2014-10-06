@@ -3,6 +3,7 @@
 #include "bitcoinunits.h"
 
 #include "guiconstants.h"
+#include "poolbrowser.h"
 
 #include <QLabel>
 #include <QLineEdit>
@@ -47,6 +48,7 @@ BitcoinAmountField::BitcoinAmountField(QWidget *parent):
 
 void BitcoinAmountField::setText(const QString &text)
 {
+    QString qsBtcPrice = _dBtcPriceCurrent > 0 ? (QString::number(amount->value() * (_dScPriceLast / _dBtcPriceCurrent))) : "0";
     if (text.isEmpty())
         amount->clear();
     else
