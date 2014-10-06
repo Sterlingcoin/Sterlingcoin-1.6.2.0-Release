@@ -151,7 +151,7 @@ void PoolBrowser::coinbasePrice(QNetworkReply* response)
 
     _dBtcPriceCurrent =  QString::fromStdString(getPairValue(jsonObject, "btc_to_gbp").get_str()).toDouble();
 
-    updateLabel(ui->lblOverviewBtcUsdPrice,
+    updateLabel(ui->lblOverviewBtcGbpPrice,
                     _dBtcPriceCurrent,
                     _dBtcPriceLast,
                     QString::fromUtf8("£"),

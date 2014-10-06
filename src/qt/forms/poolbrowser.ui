@@ -7906,7 +7906,7 @@ p, li { white-space: pre-wrap; }
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ffffff;&quot;&gt;Bitcoin Price:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
-         <widget class="QLabel" name="lblOverviewBtcUsdPrice">
+         <widget class="QLabel" name="lblOverviewBtcGbpPrice">
           <property name="geometry">
            <rect>
             <x>80</x>
@@ -7944,7 +7944,7 @@ p, li { white-space: pre-wrap; }
          <zorder>lblBittrexClose</zorder>
          <zorder>widget</zorder>
          <zorder>lblOverviewBtcPrice</zorder>
-         <zorder>lblOverviewBtcUsdPrice</zorder>
+         <zorder>lblOverviewBtcGbpPrice</zorder>
         </widget>
        </widget>
        <widget class="QWidget" name="qWidgetBittrexGraphs">
