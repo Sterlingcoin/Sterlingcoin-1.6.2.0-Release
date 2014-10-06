@@ -750,7 +750,7 @@
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="lblConvertSilkcoin">
+     <widget class="QLabel" name="lblConvertSterlingcoin">
       <property name="geometry">
        <rect>
         <x>40</x>
