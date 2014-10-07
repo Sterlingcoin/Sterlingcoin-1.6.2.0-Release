@@ -13,6 +13,7 @@
 #include <QString>
 
 using namespace json_spirit;
+using namespace std;
 
 #define QSTRING_DOUBLE(var) QString::number(var, 'f', 8)
 
@@ -290,7 +291,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
 
                 8);
 
-    updateLabel(ui->lblBittrexLastUsd,
+    updateLabel(ui->lblBittrexLastGbp,
                 _bittrexMarketSummary->getLastCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getLastPrev(double()) * _dBtcPriceCurrent,
                 QString::fromUtf8("£"),
@@ -302,7 +303,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
                 QString("B"),
                 8);
 
-    updateLabel(ui->lblBittrexAskUsd,
+    updateLabel(ui->lblBittrexAskGbp,
                 _bittrexMarketSummary->getAskCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getAskPrev(double()) * _dBtcPriceCurrent,
                 QString::fromUtf8("£"),
@@ -314,7 +315,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
                 QString("B"),
                 8);
 
-    updateLabel(ui->lblBittrexBidUsd,
+    updateLabel(ui->lblBittrexBidGbp,
                 _bittrexMarketSummary->getBidCurrent(double()) * _dBtcPriceCurrent,
                 _bittrexMarketSummary->getBidPrev(double()) * _dBtcPriceCurrent,
                 QString::fromUtf8("£"),

@@ -33,6 +33,7 @@
 #endif
 
 using namespace json_spirit;
+using namespace std;
 
 extern double _dScPriceLast;
 extern double _dBtcPriceCurrent;

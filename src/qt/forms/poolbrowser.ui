@@ -2948,7 +2948,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-          <widget class="QLabel" name="lblBittrexAskUsd">
+          <widget class="QLabel" name="lblBittrexAskGbp">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -3133,7 +3133,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;£0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -3697,7 +3697,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-          <widget class="QLabel" name="lblBittrexBidUsd">
+          <widget class="QLabel" name="lblBittrexBidGbp">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -3879,7 +3879,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             </palette>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;£0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -4454,7 +4454,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-          <widget class="QLabel" name="lblBittrexLastUsd">
+          <widget class="QLabel" name="lblBittrexLastGbp">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -4639,7 +4639,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
             <string notr="true">border:none;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;$0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;£0.00000000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
