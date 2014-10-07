@@ -10,8 +10,23 @@
 
 #include <QWidget>
 #include <QObject>
-#include <QtNetwork/QtNetwork>
 #include <QLabel>
+#include <QtNetwork/QtNetwork>
+#include <qcustomplot.h>
+#include <QCoreApplication>
+#include <QDebug>
+#include <QApplication>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QUrl>
+#include <QUrlQuery>
+#include <QVariant>
+#include <QJsonValue>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QVariantMap>
+#include <QJsonArray>
 
 #ifndef BOOST_SPIRIT_THREADSAFE
 #define BOOST_SPIRIT_THREADSAFE

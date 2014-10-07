@@ -14,6 +14,8 @@
 
 using namespace json_spirit;
 
+#define QSTRING_DOUBLE(var) QString::number(var, 'f', 8)
+
 //Coinbase API
 const QString apiCoinbasePrice = "https://api.coinbase.com/v1/currencies/exchange_rates";
 
@@ -23,7 +25,6 @@ const QString apiBittrexTrades = "http://bittrex.com/api/v1.1/public/getmarkethi
 const QString apiBittrexOrders = "http://bittrex.com/api/v1.1/public/getorderbook?market=BTC-SLG&type=both&depth=50";
 
 //Common Globals
-int mode=1;
 double _dScPriceLast = 0;
 double _dBtcPriceCurrent = 0;
 double _dBtcPriceLast = 0;

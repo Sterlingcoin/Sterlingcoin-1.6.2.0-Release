@@ -7916,7 +7916,7 @@ p, li { white-space: pre-wrap; }
            </rect>
           </property>
           <property name="text">
-           <string>£1000.00</string>
+           <string/>
           </property>
          </widget>
          <zorder>qWidgetBittrexAsk</zorder>
