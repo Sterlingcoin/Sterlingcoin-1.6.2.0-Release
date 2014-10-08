@@ -141,8 +141,8 @@ void PoolBrowser::parseNetworkResponse(QNetworkReply* response)
  *
  * Response: {"btc_to_pgk":"28.152994","btc_to_gyd":"2743.906541","btc_to_mmk":"11611.550858", ... ,"brl_to_btc":"0.037652"}
  *************************************************************************************/
-void PoolBrowser::coinbasePrice(QNetworkReply* response)
-{
+void PoolBrowser::coinbasePrice(QNetworkReply* response) {
+    try {
     mValue jsonResponse = new mValue();
     QString apiResponse = response->readAll();
 
@@ -161,6 +161,9 @@ void PoolBrowser::coinbasePrice(QNetworkReply* response)
 
     _dBtcPriceLast = _dBtcPriceCurrent;
     _dScPriceLast = _dBtcPriceCurrent * _bittrexMarketSummary->getLastCurrent(double());
+    } catch (exception ex) {
+        printf("PoolBrowser::coinbasePrice: %s\r\n", ex.what());
+    }
 }
 
 /*************************************************************************************
@@ -256,7 +259,7 @@ void PoolBrowser::bittrexMarketSummary(QNetworkReply* response)
     double changeLast  = (_bittrexMarketSummary->getLastPrev(double()) - _bittrexMarketSummary->getPrevDayCurrent(double())) / _bittrexMarketSummary->getPrevDayCurrent(double()) * 100;
 
     QString changeDirection = _bittrexMarketSummary->getLastCurrent(double()) > _bittrexMarketSummary->getPrevDayCurrent(double())
-            ? QString("+") : _bittrexMarketSummary->getLastCurrent(double()) < _bittrexMarketSummary->getPrevDayCurrent(double())
+            ? QString("") : _bittrexMarketSummary->getLastCurrent(double()) < _bittrexMarketSummary->getPrevDayCurrent(double())
             ? QString("") : QString("");
 
     updateLabel(ui->lblBittrexChangePerc,
