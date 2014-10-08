@@ -534,7 +534,7 @@
      <widget class="QPushButton" name="btnUpdateMarketData">
       <property name="geometry">
        <rect>
-        <x>540</x>
+        <x>550</x>
         <y>0</y>
         <width>171</width>
         <height>41</height>
@@ -740,7 +740,7 @@
        <string/>
       </property>
       <property name="icon">
-       <iconset>
+       <iconset resource="../bitcoin.qrc">
         <normaloff>:/icons/res/icons/update.png</normaloff>:/icons/res/icons/update.png</iconset>
       </property>
       <property name="iconSize">
@@ -755,7 +755,7 @@
        <rect>
         <x>40</x>
         <y>10</y>
-        <width>151</width>
+        <width>161</width>
         <height>20</height>
        </rect>
       </property>
@@ -1190,7 +1190,7 @@
      <widget class="QLineEdit" name="txtConvertSterlingcoinQty">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>210</x>
         <y>10</y>
         <width>100</width>
         <height>23</height>
@@ -1225,7 +1225,7 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QPushButton" name="btnConvertSterlingcoin">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>310</x>
         <y>10</y>
         <width>51</width>
         <height>23</height>
@@ -1259,9 +1259,9 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="lblConvertSterlingcoinResults">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>380</x>
         <y>0</y>
-        <width>171</width>
+        <width>161</width>
         <height>41</height>
        </rect>
       </property>
@@ -2187,7 +2187,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
          <string notr="true">border:none;background:#8a8a8a;</string>
         </property>
         <attribute name="icon">
-         <iconset>
+         <iconset resource="../bitcoin.qrc">
           <normaloff>:/icons/res/icons/main.png</normaloff>:/icons/res/icons/main.png</iconset>
         </attribute>
         <attribute name="title">
@@ -7955,7 +7955,7 @@ p, li { white-space: pre-wrap; }
          <string notr="true"/>
         </property>
         <attribute name="icon">
-         <iconset>
+         <iconset resource="../bitcoin.qrc">
           <normaloff>:/icons/res/icons/graph.png</normaloff>:/icons/res/icons/graph.png</iconset>
         </attribute>
         <attribute name="title">
