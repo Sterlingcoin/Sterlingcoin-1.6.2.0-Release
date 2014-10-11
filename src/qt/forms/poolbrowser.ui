@@ -2168,7 +2168,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
         <enum>QTabWidget::Rounded</enum>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="iconSize">
         <size>
@@ -4852,7 +4852,7 @@ QTabBar::tab:last {margin-right:100px;background:#8a8a8a;}</string>
            </font>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#f2594b;&quot;&gt;Sell&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#ff0000;&quot;&gt;Sell&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QTreeWidget" name="qTreeWidgetBittrexSell">
@@ -7035,7 +7035,7 @@ p, li { white-space: pre-wrap; }
            </font>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#7cc576;&quot;&gt;Buy&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:400; color:#13ff00;&quot;&gt;Buy&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QFrame" name="imgBittrexBuy">
@@ -8019,7 +8019,7 @@ background-color: #b2b2b2;</string>
           <widget class="QWidget" name="scrollAreaWidgetContentsBittrex">
            <property name="geometry">
             <rect>
-             <x>0</x>
+             <x>-541</x>
              <y>0</y>
              <width>1635</width>
              <height>363</height>

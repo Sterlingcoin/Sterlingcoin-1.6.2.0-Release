@@ -2,7 +2,7 @@
 TEMPLATE = app
 TARGET = Sterlingcoin-qt
 macx:TARGET = "Sterlingcoin-Qt"
-VERSION = 1.1.0.0
+VERSION = 1.2.0.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -276,6 +276,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/qcustomplot.h \
     src/qt/poolbrowser.h \
     src/qt/blockbrowser.h \
+    src/qt/tradingdialog.h \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -366,6 +367,7 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/poolbrowser.cpp \
     src/qt/blockbrowser.cpp \
+    src/qt/tradingdialog.cpp \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -392,6 +394,7 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/poolbrowser.ui \
     src/qt/forms/blockbrowser.ui \
+    src/qt/forms/tradingdialog.ui
 
 
 contains(USE_QRCODE, 1) {

@@ -16,6 +16,7 @@ class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
 class PoolBrowser;
+class tradingDialog;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -70,6 +71,7 @@ private:
 
     PoolBrowser *poolBrowser;
     BlockBrowser *blockBrowser;
+    tradingDialog   *tradingDialogPage;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -100,6 +102,7 @@ private:
     QAction *lockWalletAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+    QAction *TradingAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -156,6 +159,8 @@ private slots:
     void gotoPoolBrowser();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
+    /** Switch to trading page */
+    void gotoTradingPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */
