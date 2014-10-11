@@ -280,12 +280,12 @@ void BitcoinGUI::createActions()
     fiatAction = new QAction(QIcon(":/icons/fiat"), tr("Buy SLG"), this);
     fiatAction->setToolTip(tr("Buy Sterlingcoin with Fiat"));
     fiatAction->setCheckable(true);
-    fiatAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_9));
+    fiatAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
     tabGroup->addAction(fiatAction);
 
     blockAction = new QAction(QIcon(":/icons/block"), tr("&Transaction Explorer"), this);
     blockAction->setToolTip(tr("Explore the BlockChain"));
-    blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
+    blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_9));
     blockAction->setCheckable(true);
     tabGroup->addAction(blockAction);
 
