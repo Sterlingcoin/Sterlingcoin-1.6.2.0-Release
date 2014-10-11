@@ -51,6 +51,7 @@
         <file alias="block">res/icons/block.png</file>
         <file>res/icons/explorer-header.png</file>
         <file alias="trading">res/icons/trade.png</file>
+        <file alias="fiat">res/icons/fiat.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>

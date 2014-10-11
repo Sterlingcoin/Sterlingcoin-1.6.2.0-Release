@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
+#include <QWebFrame>
 
 class TransactionTableModel;
 class ClientModel;
@@ -70,8 +71,9 @@ private:
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     PoolBrowser *poolBrowser;
-    BlockBrowser *blockBrowser;
     tradingDialog   *tradingDialogPage;
+    QWidget *fiatPage;
+    BlockBrowser *blockBrowser;
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -87,6 +89,7 @@ private:
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
+    QAction *fiatAction;
     QAction *addressBookAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
@@ -110,6 +113,10 @@ private:
     RPCConsole *rpcConsole;
 
     QMovie *syncIconMovie;
+
+    bool fiatInit;
+
+    QWebFrame * fiatFrame;
 
     /** Create the main UI actions. */
     void createActions();
@@ -157,10 +164,12 @@ private slots:
     void gotoSendCoinsPage();
     /** Switch to Bittrex feed*/
     void gotoPoolBrowser();
-    /** Switch to block explorer*/
-    void gotoBlockBrowser();
     /** Switch to trading page */
     void gotoTradingPage();
+    /** Switch to FiatPage*/
+    void gotoFiatPage();
+    /** Switch to block explorer*/
+    void gotoBlockBrowser();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */

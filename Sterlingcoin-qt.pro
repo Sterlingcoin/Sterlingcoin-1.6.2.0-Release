@@ -4,16 +4,12 @@ TARGET = Sterlingcoin-qt
 macx:TARGET = "Sterlingcoin-Qt"
 VERSION = 1.2.0.0
 INCLUDEPATH += src src/json src/qt
-QT += core gui network
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
+QT += core gui network webkit
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
+DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_DISABLE_DEPRECATED_BEFORE=0
 CONFIG += no_include_pwd
 CONFIG += thread
 
-greaterThan(QT_MAJOR_VERSION, 4) {
-    QT += widgets printsupport
-    DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
-}
 #############################################################################################################################
 
 # win32 {
@@ -394,7 +390,8 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/poolbrowser.ui \
     src/qt/forms/blockbrowser.ui \
-    src/qt/forms/tradingdialog.ui
+    src/qt/forms/tradingdialog.ui \
+    src/qt/forms/fiatpage.ui 
 
 
 contains(USE_QRCODE, 1) {
