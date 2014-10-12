@@ -786,9 +786,8 @@ void BitcoinGUI::gotoTradingPage()
 void BitcoinGUI::gotoFiatPage()
 {
     fiatAction->setChecked(true);
-    fiatPage->findChild<QWebView *>("webView")->load(QUrl("https://www.litebit.eu/coin/slg/en/"));
+    fiatPage->findChild<QWebView *>("webView")->load(QUrl("https://www.litebit.eu/frame/slg/en/"));
     centralWidget->setCurrentWidget(fiatPage);
-
     exportAction->setEnabled(false);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }

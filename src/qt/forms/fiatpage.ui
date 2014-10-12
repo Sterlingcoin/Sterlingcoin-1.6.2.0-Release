@@ -10,6 +10,97 @@
     <height>381</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>138</red>
+        <green>138</green>
+        <blue>138</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -17,12 +108,20 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget {background : white}</string>
+   <string notr="true">QWidget {background : #8a8a8a}
+QWebView #coinsoorten {display: none; visibility: hidden;}
+QWebView #purchase {display:none; visibility: hidden;}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
    <item>
-    <widget class="QWebView" name="webView">
-     <property name="url">
+    <widget class="QWebView" name="webView" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+QWebView #coinsoorten {display: none; visibility: hidden;}
+QWebView #purchase {display: none; visibility: hidden;}
+QWebView #currencies {display: none; visibility: hidden;}</string>
+     </property>
+     <property name="url" stdset="0">
       <url>
        <string>about:blank</string>
       </url>
@@ -37,6 +136,10 @@
        <height>50</height>
       </size>
      </property>
+     <property name="styleSheet">
+      <string notr="true">#coinsoorten {display: none; visibility: hidden;}
+#purchase {display:none; visibility: hidden;}</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
      </property>
@@ -49,7 +152,7 @@
         <x>-10</x>
         <y>10</y>
         <width>801</width>
-        <height>41</height>
+        <height>91</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -62,7 +165,8 @@
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">QFrame {background : white}
+       <string notr="true">QFrame {background : #8a8a8a
+}
 </string>
       </property>
       <property name="frameShape">
@@ -74,8 +178,8 @@
       <widget class="QPushButton" name="back">
        <property name="geometry">
         <rect>
-         <x>280</x>
-         <y>10</y>
+         <x>550</x>
+         <y>0</y>
          <width>120</width>
          <height>27</height>
         </rect>
@@ -113,7 +217,7 @@ QPushButton:pressed { background : #b2b2b2; }</string>
         <string>Back</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset>
          <normaloff>:/icons/back</normaloff>:/icons/back</iconset>
        </property>
        <property name="iconSize">
@@ -126,8 +230,8 @@ QPushButton:pressed { background : #b2b2b2; }</string>
       <widget class="QPushButton" name="reload">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>10</y>
+         <x>680</x>
+         <y>0</y>
          <width>120</width>
          <height>27</height>
         </rect>
@@ -165,7 +269,7 @@ QPushButton:pressed { background : #b2b2b2; }</string>
         <string>Reload</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset>
          <normaloff>:/icons/reload</normaloff>:/icons/reload</iconset>
        </property>
        <property name="iconSize">

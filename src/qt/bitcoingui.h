@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 #include <QWebFrame>
+#include <QWebElement>
 
 class TransactionTableModel;
 class ClientModel;
@@ -117,6 +118,7 @@ private:
     bool fiatInit;
 
     QWebFrame * fiatFrame;
+    
 
     /** Create the main UI actions. */
     void createActions();
