@@ -30,13 +30,13 @@ Testnet Port = 8105
 For more information, as well as an immediately useable, binary version of
 the Sterlingcoin client sofware, see http://www.sterlingcoin.org.uk
 
-Build Instructions for QT4 Linux Wallet
+Build Instructions for QT5 Linux Wallet
 ======================================
 Create a folder named Sterlingcoin in /home/ and unpack the contents of ~/Sterlingcoin-master to that folder.
 
 Install dependencies via Terminal:
 
-$ sudo apt-get install qt4-qmake libqt4-dev build-essential libboost-dev libboost-all-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libevent-dev libcurl4-openssl-dev git libpng-dev qrencode libqrencode-dev make
+$ sudo apt-get install make libqt5webkit5-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler build-essential libboost-dev libboost-all-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libevent-dev libcurl4-openssl-dev git libpng-dev qrencode libqrencode-dev
 
 //In terminal navigate to the Sterlingcoin folder.
 
@@ -44,7 +44,7 @@ $ cd /home/Sterlingcoin
 
 //Enter into the terminal:
 
-$ qmake -qt=qt4 "USE_QRCODE=1" "USE_UPNP=-"
+$ qmake -qt=qt5 "USE_QRCODE=1" "USE_UPNP=-"
 
 //Then:
 
