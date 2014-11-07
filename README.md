@@ -20,7 +20,7 @@ PoS Interest - 5.5% Annually
 30 Blocks for Sterlingcoin to be Minted/Mature
 15 Blocks for Sterlingcoin Transaction Confirmation
 2 Minute Target Spacing
-Dark Gravity Well 3 
+Block Retargets Every Block
 50 Coins Per Block
 63,900,000 Total Coins
 No Block Halving
