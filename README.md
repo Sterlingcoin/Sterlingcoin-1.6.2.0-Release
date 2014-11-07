@@ -1,5 +1,7 @@
 Sterlingcoin Version 1.2.0.0
 
+POD-CryptoAsian
+
 Sterlingcoin integration/staging tree
 ================================
 
