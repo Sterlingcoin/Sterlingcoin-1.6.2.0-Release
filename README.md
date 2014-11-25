@@ -12,15 +12,15 @@ Copyright (c) 2014 Sterlingcoin Developers
 What is Sterlingcoin?
 ----------------
 X13
-PoW for 6 Months
+PoW/PoS for 6 Months
 PoS after 6 Months
-PoS Minimum - 1 Day
+PoS Minimum - 24 Minutes
 PoS Maximum - Unlimited
 PoS Interest - 5.5% Annually 
 30 Blocks for Sterlingcoin to be Minted/Mature
 15 Blocks for Sterlingcoin Transaction Confirmation
 2 Minute Target Spacing
-Block Retargets Every Block
+Difficulty Retargets Every Block
 50 Coins Per Block
 63,900,000 Total Coins
 No Block Halving
@@ -72,6 +72,8 @@ $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev lib
 $ cd /home/Sterlingcoin
 
 //Enter into the terminal:
+
+$mkdir obj
 
 $ make -f makefile.unix "USE_UPNP=-"
 
@@ -153,8 +155,5 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     qmake Sterlingcoin_QT_TEST=1 -o Makefile.test Sterlingcoin-qt.pro
     make -f Makefile.test
     ./Sterlingcoin-qt_test
-
-
-
-
-
+    
+//End of ReadMe
