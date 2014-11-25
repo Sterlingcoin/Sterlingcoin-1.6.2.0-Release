@@ -11,6 +11,7 @@ class ClientModel;
 class WalletModel;
 class TransactionView;
 class OverviewPage;
+class StatisticsPage;
 class BlockBrowser;
 class AddressBookPage;
 class SendCoinsDialog;
@@ -75,6 +76,7 @@ private:
     tradingDialog   *tradingDialogPage;
     QWidget *fiatPage;
     BlockBrowser *blockBrowser;
+    StatisticsPage *statisticsPage; 
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -91,6 +93,7 @@ private:
     QAction *quitAction;
     QAction *sendCoinsAction;
     QAction *fiatAction;
+    QAction *statisticsAction;
     QAction *addressBookAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
@@ -156,6 +159,8 @@ public slots:
 private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
+    /** Switch to Statistics Page*/
+    void gotoStatisticsPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */

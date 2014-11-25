@@ -30,6 +30,8 @@
 #include "ui_fiatpage.h"
 #include "poolbrowser.h"
 #include "blockbrowser.h"
+#include "statisticspage.h"
+
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -110,6 +112,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     overviewPage = new OverviewPage();
     poolBrowser = new PoolBrowser(this);
     blockBrowser = new BlockBrowser(this);
+    statisticsPage = new StatisticsPage(this);
 
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
@@ -137,6 +140,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     centralWidget = new QStackedWidget(this);
     centralWidget->addWidget(overviewPage);
+    centralWidget->addWidget(statisticsPage);
     centralWidget->addWidget(poolBrowser);
     centralWidget->addWidget(blockBrowser);
     centralWidget->addWidget(transactionsPage);
@@ -289,6 +293,12 @@ void BitcoinGUI::createActions()
     blockAction->setCheckable(true);
     tabGroup->addAction(blockAction);
 
+    statisticsAction = new QAction(QIcon(":/icons/statistics"), tr("&Statistics"), this);
+    statisticsAction->setToolTip(tr("SLG PoW/PoS Statistics"));
+    statisticsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_0));
+    statisticsAction->setCheckable(true);
+    tabGroup->addAction(statisticsAction);
+
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
@@ -304,6 +314,7 @@ void BitcoinGUI::createActions()
     connect(TradingAction, SIGNAL(triggered()), this, SLOT(gotoTradingPage()));
     connect(fiatAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(fiatAction, SIGNAL(triggered()), this, SLOT(gotoFiatPage()));
+    connect(statisticsAction, SIGNAL(triggered()), this, SLOT(gotoStatisticsPage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("E&xit"), this);
     quitAction->setToolTip(tr("Quit application"));
@@ -399,6 +410,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(TradingAction);
     toolbar->addAction(fiatAction);
     toolbar->addAction(blockAction);
+    toolbar->addAction(statisticsAction);
      
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -463,6 +475,7 @@ void BitcoinGUI::setWalletModel(WalletModel *walletModel)
         sendCoinsPage->setModel(walletModel);
         signVerifyMessageDialog->setModel(walletModel);
         blockBrowser->setModel(clientModel);
+        statisticsPage->setModel(clientModel);
 
 
         setEncryptionStatus(walletModel->getEncryptionStatus());
@@ -797,6 +810,16 @@ void BitcoinGUI::gotoBlockBrowser()
     blockAction->setChecked(true);
     centralWidget->setCurrentWidget(blockBrowser);
 
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+}
+
+void BitcoinGUI::gotoStatisticsPage() 
+{
+    statisticsAction->setChecked(true);
+    centralWidget->setCurrentWidget(statisticsPage);
+    
+    exportAction->setVisible(false);
     exportAction->setEnabled(false);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
