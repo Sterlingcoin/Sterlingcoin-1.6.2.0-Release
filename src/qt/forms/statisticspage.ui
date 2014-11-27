@@ -3504,7 +3504,7 @@
        <bool>false</bool>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#ffffff;&quot;&gt;Sterlingcoin PoW/PoS Phases:&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;1) Block 1 to 131,400 = PoW/PoS&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;2) Block 131,401+ = 100% PoS&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#ffffff;&quot;&gt;&lt;b&gt;Sterlingcoin PoW/PoS Phases:&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;1) Block 1 to 131,400 = PoW/PoS&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;2) Block 131,401+ = 100% PoS&lt;/span&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;b&gt;Current Phase&lt;/b&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QProgressBar" name="progressBar">
@@ -3621,7 +3621,7 @@
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>140</y>
+        <y>150</y>
         <width>91</width>
         <height>20</height>
        </rect>
