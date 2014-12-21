@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sterlingcoin
+Comment=Sterlingcoin P2P Cryptocurrency
+Comment[fr]=Sterlingcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Sterlingcoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/sterlingcoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/sterlingcoin;
+Categories=Office;

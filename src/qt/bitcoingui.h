@@ -6,14 +6,18 @@
 #include <QWebFrame>
 #include <QWebElement>
 
+#include <stdint.h>
+
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
+class MessageModel;
 class TransactionView;
 class OverviewPage;
 class StatisticsPage;
 class BlockBrowser;
 class AddressBookPage;
+class MessagePage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
@@ -53,6 +57,11 @@ public:
     */
     void setWalletModel(WalletModel *walletModel);
 
+    void setMessageModel(MessageModel *messageModel);
+
+    /// Get window identifier of QMainWindow (BitcoinGUI)
+    WId getMainWinId() const;
+
 protected:
     void changeEvent(QEvent *e);
     void closeEvent(QCloseEvent *event);
@@ -62,21 +71,22 @@ protected:
 private:
     ClientModel *clientModel;
     WalletModel *walletModel;
+    MessageModel *messageModel;
 
     QStackedWidget *centralWidget;
 
     OverviewPage *overviewPage;
-    QWidget *transactionsPage;
-    AddressBookPage *addressBookPage;
-    AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
-
+    AddressBookPage *receiveCoinsPage;
+    QWidget *transactionsPage;
+    AddressBookPage *addressBookPage;
+    MessagePage *messagePage;
     PoolBrowser *poolBrowser;
     tradingDialog   *tradingDialogPage;
     QWidget *fiatPage;
     BlockBrowser *blockBrowser;
-    StatisticsPage *statisticsPage; 
+    StatisticsPage *statisticsPage;  
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -95,8 +105,11 @@ private:
     QAction *fiatAction;
     QAction *statisticsAction;
     QAction *addressBookAction;
+    QAction *messageAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
+    QAction *signMessageAction2;
+    QAction *verifyMessageAction2;
     QAction *aboutAction;
     QAction *receiveCoinsAction;
     QAction *optionsAction;
@@ -121,6 +134,8 @@ private:
     bool fiatInit;
 
     QWebFrame * fiatFrame;
+
+    uint64_t nWeight;
     
 
     /** Create the main UI actions. */
@@ -159,16 +174,16 @@ public slots:
 private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
-    /** Switch to Statistics Page*/
-    void gotoStatisticsPage();
+    /** Switch to send coins page */
+    void gotoSendCoinsPage();
+    /** Switch to receive coins page */
+    void gotoReceiveCoinsPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
     /** Switch to address book page */
     void gotoAddressBookPage();
-    /** Switch to receive coins page */
-    void gotoReceiveCoinsPage();
-    /** Switch to send coins page */
-    void gotoSendCoinsPage();
+    /** Switch to message page */
+    void gotoMessagePage();
     /** Switch to Bittrex feed*/
     void gotoPoolBrowser();
     /** Switch to trading page */
@@ -177,11 +192,12 @@ private slots:
     void gotoFiatPage();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
+    /** Switch to Statistics Page*/
+    void gotoStatisticsPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */
     void gotoVerifyMessageTab(QString addr = "");
-
     /** Show configuration dialog */
     void optionsClicked();
     /** Show about dialog */
@@ -195,6 +211,11 @@ private slots:
         The new items are those between start and end inclusive, under the given parent item.
     */
     void incomingTransaction(const QModelIndex & parent, int start, int end);
+     /** Show incoming message notification for new messages.
+
+        The new items are those between start and end inclusive, under the given parent item.
+    */
+    void incomingMessage(const QModelIndex & parent, int start, int end);
     /** Encrypt the wallet */
     void encryptWallet(bool status);
     /** Backup the wallet */
@@ -211,6 +232,8 @@ private slots:
     /** simply calls showNormalIfMinimized(true) for use in SLOT() macro */
     void toggleHidden();
 
+    void updateWeight();
+    
     void updateStakingIcon();
 };
 

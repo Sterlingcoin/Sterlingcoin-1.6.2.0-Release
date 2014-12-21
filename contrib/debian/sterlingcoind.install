@@ -1,0 +1,2 @@
+debian/bin/sterlingcoind usr/bin
+src/sterlingcoind usr/lib/sterlingcoin

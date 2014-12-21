@@ -6,6 +6,8 @@
 #include "walletdb.h"
 #include "guiutil.h"
 
+bool fUseGreyTheme;
+
 OptionsModel::OptionsModel(QObject *parent) :
     QAbstractListModel(parent)
 {
@@ -49,7 +51,8 @@ void OptionsModel::Init()
     nTransactionFee = settings.value("nTransactionFee").toLongLong();
     nReserveBalance = settings.value("nReserveBalance").toLongLong();
     language = settings.value("language", "").toString();
-
+    fUseGreyTheme = settings.value("fUseGreyTheme", true).toBool();
+    
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:
     if (settings.contains("fUseUPnP"))
@@ -176,6 +179,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return settings.value("language", "");
         case CoinControlFeatures:
             return QVariant(fCoinControlFeatures);
+        case UseGreyTheme:
+            return QVariant(fUseGreyTheme);
         default:
             return QVariant();
         }
@@ -275,6 +280,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("fCoinControlFeatures", fCoinControlFeatures);
             emit coinControlFeaturesChanged(fCoinControlFeatures);
             }
+            break;
+        case UseGreyTheme:
+            fUseGreyTheme = value.toBool();
+            settings.setValue("fUseGreyTheme", fUseGreyTheme);
             break;
         default:
             break;

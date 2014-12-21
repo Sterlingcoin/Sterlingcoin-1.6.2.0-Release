@@ -1,0 +1,35 @@
+**Sterlingcoin 1.4 Full Release CHANGELOG**
+------------------------------
+Created CHANGELOG
+Updated ReadMe with correct build information for Sterlingcoin
+Splashscreen and About graphics updated
+Updated all icons for legibility
+Added stylesheet for QT elements
+Amended guiconstants.h colour elements.
+Created obj folder/directory in /src/ to fix build issue of Daemon
+Added 3rd DNS Sterlingcoin Seed Node (seed3.sterlingcoin.org.uk)
+Checkpoints added at blocks 84000, 88000, 92000, 96000, 100000, 104000 & 112000
+Encrypted messaging via address/compressedpubkey added with rich text editor
+Updated Genesis Timestamps
+Updated/Fixed Stake Modifiers
+Relock on sending coins when "for staking only" is activated
+Sterlingcoin safe shutdown during Windows Shutdown
+Fix start Bitcoin on system login
+Fix periodical GUI lag
+Fix to show short scriptPubKeys correctly
+Fix to reject unknown block version
+Fix namespace bug
+Fixed minor memory leak
+Removed polling of showmyip.com as it doesn't exist anymore
+Removed unused UPnP code from main.h
+Removed LogException( ) which is never used
+Removed CPubKey::VerifyCompact( ) which is never used
+Removed GetMedianTime( ) which is never used
+Removed LookupHostNumeric( ) which is never used
+Removed EndMessageAbortIfEmpty() which is never used
+Removed CWallet::ScanForWalletTransaction() which is never used
+Removed unused Print/PrintHex functions
+Cleanup of /contrib/debian/ & /contrib/macdeploy/
+_______________________________________________________________________________________________________________________
+
+**Sterlingcoin Versions 1.0/1.1/1.2/1.3** - Please see commits from Sept 21st 2014 to Nov 27th 2014- https://github.com/Sterlingcoin/Sterlingcoin-Linux-Source/commits/master

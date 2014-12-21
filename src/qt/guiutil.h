@@ -115,6 +115,8 @@ namespace GUIUtil
         QString uiOptions;
     };
 
+    void SetGreyThemeQSS(QApplication& app);
+
 } // namespace GUIUtil
 
 #endif // GUIUTIL_H

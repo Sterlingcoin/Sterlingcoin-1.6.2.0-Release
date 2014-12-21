@@ -1,0 +1,5 @@
+sterlingcoin-qt usr/bin
+share/pixmaps/sterlingcoin32.xpm usr/share/pixmaps
+share/pixmaps/sterlingcoin80.xpm usr/share/pixmaps
+debian/sterlingcoin-qt.desktop usr/share/applications
+debian/sterlingcoin-qt.protocol usr/share/kde4/services/

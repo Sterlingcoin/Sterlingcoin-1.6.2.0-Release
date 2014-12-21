@@ -1,4 +1,4 @@
-Sterlingcoin Version 1.3.0.0
+Sterlingcoin Version 1.4.0.0 Full Release
 
 POD-CryptoAsian
 
@@ -69,11 +69,9 @@ $ sudo apt-get install build-essential libboost-all-dev libcurl4-openssl-dev lib
 
 //In terminal navigate to the Sterlingcoin folder.
 
-$ cd /home/Sterlingcoin
+$ cd /home/Sterlingcoin/src/
 
 //Enter into the terminal:
-
-$mkdir obj
 
 $ make -f makefile.unix "USE_UPNP=-"
 

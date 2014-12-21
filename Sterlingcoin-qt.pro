@@ -1,9 +1,9 @@
 #############################################################################################################################
 TEMPLATE = app
-TARGET = Sterlingcoin-qt
-macx:TARGET = "Sterlingcoin-Qt"
-VERSION = 1.3.0.0
-INCLUDEPATH += src src/json src/qt
+TARGET = Sterlingcoin 1.4 Full Release
+macx:TARGET = "Sterlingcoin 1.4 Full Release"
+VERSION = 1.4.0.0
+INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 QT += core gui network webkit
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_DISABLE_DEPRECATED_BEFORE=0
@@ -257,6 +257,15 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/poolbrowser.h \
     src/qt/blockbrowser.h \
     src/qt/tradingdialog.h \
+    src/qt/messagepage.h \
+    src/qt/messagemodel.h \
+    src/qt/sendmessagesdialog.h \
+    src/qt/sendmessagesentry.h \
+    src/qt/qvalidatedtextedit.h \
+    src/smessage.h \
+    src/lz4/lz4.h \
+    src/xxhash/xxhash.h \
+    src/xxhash/xxhash.c \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -281,7 +290,9 @@ HEADERS += src/qt/bitcoingui.h \
     src/sph_types.h \
     src/threadsafety.h \
     src/txdb-leveldb.h \
-    src/genesis.h
+    src/genesis.h \
+    src/qt/winshutdownmonitor.h \
+    src/qt/plugins/mrichtexteditor/mrichtextedit.h    
 
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
@@ -349,6 +360,14 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/poolbrowser.cpp \
     src/qt/blockbrowser.cpp \
     src/qt/tradingdialog.cpp \
+    src/qt/messagepage.cpp \
+    src/qt/sendmessagesdialog.cpp \
+    src/qt/sendmessagesentry.cpp \
+    src/qt/messagemodel.cpp \
+    src/qt/qvalidatedtextedit.cpp \
+    src/rpcsmessage.cpp \
+    src/smessage.cpp \
+    src/lz4/lz4.c \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -356,9 +375,12 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/scrypt-x86_64.S \
     src/scrypt.cpp \
     src/pbkdf2.cpp \
+    src/qt/winshutdownmonitor.cpp \
+    src/qt/plugins/mrichtexteditor/mrichtextedit.cpp
 
 RESOURCES += \
     src/qt/bitcoin.qrc
+    src/qt/res/themes/qdarkstyle/style.qrc
 
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
@@ -377,8 +399,11 @@ FORMS += \
     src/qt/forms/blockbrowser.ui \
     src/qt/forms/tradingdialog.ui \
     src/qt/forms/statisticspage.ui \
-    src/qt/forms/fiatpage.ui 
-
+    src/qt/forms/fiatpage.ui \
+    src/qt/forms/messagepage.ui \
+    src/qt/forms/sendmessagesdialog.ui \
+    src/qt/forms/sendmessagesentry.ui \
+    src/qt/plugins/mrichtexteditor/mrichtextedit.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
@@ -415,6 +440,11 @@ OTHER_FILES += README.md \
     src/test/*.h \
     src/qt/test/*.cpp \
     src/qt/test/*.h
+
+# "Other files" to show in Qt Creator
+OTHER_FILES += \
+        doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc \
+    src/lz4/LICENSE
 
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {

@@ -1,6 +1,6 @@
-novacoin (0.4.0~dfsg-1) unstable; urgency=low
+sterlingcoin (1.4.0.0~dfsg-1) stable; urgency=low
 
-  [ Balthazar ]
-  * Initial release.
+  [ Spencer Lievens ]
+  * Minor release.
 
- -- Balthazar <balthazar@yandex.ru>  Mon, 15 Apr 2013 22:15:22 +0100
+ -- Spencer Lievens <spencerlievens@sterlingcoi.org.uk>  Sat, 6 Dec 2014 19:20:50 +0000

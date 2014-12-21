@@ -5094,9 +5094,9 @@
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5121,18 +5121,18 @@
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5159,9 +5159,9 @@
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5186,18 +5186,18 @@
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5224,9 +5224,9 @@
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5251,18 +5251,18 @@
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>255</green>
-                 <blue>255</blue>
+                 <red>178</red>
+                 <green>178</green>
+                 <blue>178</blue>
                 </color>
                </brush>
               </colorrole>
@@ -5285,7 +5285,7 @@
             <bool>false</bool>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
+            <string notr="true">background-color: rgb(178, 178, 178);</string>
            </property>
           </widget>
          </item>

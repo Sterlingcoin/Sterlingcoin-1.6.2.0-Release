@@ -19,13 +19,16 @@ typedef std::map<int, unsigned int> MapModifierCheckpoints;
 // When you've got your genesis, run getblock on it. Copy the modifierchecksum field, insert into code and recompile.
 static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
-        ( 0, 0x0e00670bu )
+        ( 0, 0x0e00670b )
+        ( 5000, 0x7a1ad946 )
+        ( 50000, 0x19b8159b )
+        ( 100000, 0xc1ad622b )
     ;
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
 static std::map<int, unsigned int> mapStakeModifierCheckpointsTestNet =
     boost::assign::map_list_of
-        ( 0, 0x0e00670bu )
+        ( 0, 0x0e00670b )
     ;
 
 // Get time weight
