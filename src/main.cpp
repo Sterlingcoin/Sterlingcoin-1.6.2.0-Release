@@ -44,12 +44,12 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);//  PoS starting difficulty = 0.0
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16); // PoW starting difficulty on Testnet
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
-unsigned int nTargetSpacing = 2 * 60; // 2 Minutes
+unsigned int nTargetSpacing = 2 * 60; // 2 minutes
 unsigned int nRetarget = 7.5;
-unsigned int nStakeMinAge = 1 * 60 * 24; // 1 day
-unsigned int nStakeMaxAge = -1;           //unlimited
-unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
-static const int64_t nTargetTimespan_legacy = nTargetSpacing * nRetarget; // every 15 blocks
+unsigned int nStakeMinAge = 1 * 60 * 24; // 24 minutes (This enable people to be able to stake straightaway)
+unsigned int nStakeMaxAge = -1;           // Unlimited
+unsigned int nModifierInterval = 10 * 60; // Time to elapse before new modifier is computed
+static const int64_t nTargetTimespan_legacy = nTargetSpacing * nRetarget; // Every 15 blocks
 static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
 
 static const int64_t nTargetTimespan = 16 * 60;
