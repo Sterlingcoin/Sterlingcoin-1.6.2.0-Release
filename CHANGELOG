@@ -1,3 +1,9 @@
+**Sterlingcoin 1.5 Full Release CHANGELOG**
+------------------------------
+Updated LevelDB to 1.18
+Updated OpenSSL Libraries to 1.0.1p
+PoS payment fix and HARDFORK at block 220,000 (Blockchain is preserved)
+
 **Sterlingcoin 1.4 Full Release CHANGELOG**
 ------------------------------
 Created CHANGELOG
