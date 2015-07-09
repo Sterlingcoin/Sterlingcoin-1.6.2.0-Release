@@ -994,7 +994,12 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
+    int64_t nSubsidy;
+    
+    if(pindexBest->nHeight > LAST_OLD_POS_BLOCK)
+        nSubsidy = nCoinAge * nRewardCoinYear / 365;
+    else
+        nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
 
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -1971,7 +1976,11 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64_t& nCoinAge) const
             printf("coin age nValueIn=%"PRId64" nTimeDiff=%d bnCentSecond=%s\n", nValueIn, nTime - txPrev.nTime, bnCentSecond.ToString().c_str());
     }
 
-    CBigNum bnCoinDay = bnCentSecond * CENT / (24 * 60 * 60);
+    CBigNum bnCoinDay;
+    if(pindexBest->nHeight > LAST_OLD_POS_BLOCK)
+        bnCoinDay = bnCentSecond * CENT / COIN / (24 * 60 * 60);
+    else
+        bnCoinDay = bnCentSecond * CENT / (24 * 60 * 60);
     if (fDebug && GetBoolArg("-printcoinage"))
         printf("coin age bnCoinDay=%s\n", bnCoinDay.ToString().c_str());
     nCoinAge = bnCoinDay.getuint64();

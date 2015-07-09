@@ -1,8 +1,8 @@
 #############################################################################################################################
 TEMPLATE = app
-TARGET = Sterlingcoin 1.4 Full Release
-macx:TARGET = "Sterlingcoin 1.4 Full Release"
-VERSION = 1.4.0.0
+TARGET = Sterlingcoin 1.5 Full Release
+macx:TARGET = "Sterlingcoin 1.5 Full Release"
+VERSION = 1.5.0.0
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 QT += core gui network webkit
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
@@ -26,8 +26,8 @@ CONFIG += thread
 # BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
 # BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 # BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-# OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1i/include
-# OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1i
+# OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2p/include
+# OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2p
 # MINIUPNPC_INCLUDE_PATH=C:/deps/
 # MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 # QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
