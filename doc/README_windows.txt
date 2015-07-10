@@ -3,7 +3,7 @@ Sterlingcoin integration/staging tree
 
 http://www.sterlingcoin.org.uk
 
-Copyright (c) 2014 Sterlingcoin Developers
+Copyright (c) 2014-2015 Sterlingcoin Developers
 
 What is Sterlingcoin?
 ----------------
