@@ -47,7 +47,7 @@ static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.055 * COIN;	// 5.5% annual inte
 #define FOUNDATION_TEST "n1EexFn39nDYemEhykVyWvCxoBbhm6Sr47"
 
 //FindCoin: Fork to fix POS - last block of old protocol
-static const int LAST_OLD_POS_BLOCK = 260000;
+static const int LAST_OLD_POS_BLOCK = 350000;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
