@@ -28,7 +28,6 @@
 #include "rpcconsole.h"
 #include "wallet.h"
 #include "ui_fiatpage.h"
-#include "poolbrowser.h"
 #include "blockbrowser.h"
 #include "statisticspage.h"
 #include "messagepage.h"
@@ -141,7 +140,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     addressBookPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab);
     messagePage   = new MessagePage(this);
-    poolBrowser = new PoolBrowser(this);
     tradingDialogPage = new tradingDialog(this);
 
     fiatPage = new QWidget(this);
@@ -162,7 +160,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(messagePage);
-    centralWidget->addWidget(poolBrowser);
     centralWidget->addWidget(tradingDialogPage);
     centralWidget->addWidget(fiatPage);
     centralWidget->addWidget(blockBrowser);
@@ -327,7 +324,6 @@ void BitcoinGUI::createActions()
 
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(overviewAction, SIGNAL(triggered()), this, SLOT(gotoOverviewPage()));
-    connect(poolAction, SIGNAL(triggered()), this, SLOT(gotoPoolBrowser()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(sendCoinsAction, SIGNAL(triggered()), this, SLOT(gotoSendCoinsPage()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -855,15 +851,6 @@ void BitcoinGUI::gotoOverviewPage()
 
     exportAction->setEnabled(false);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-}
-
-void BitcoinGUI::gotoPoolBrowser()
-{
-    poolAction->setChecked(true);
-    centralWidget->setCurrentWidget(poolBrowser);
-    exportAction->setEnabled(false);
-    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-
 }
 
 void BitcoinGUI::gotoTradingPage()

@@ -2,7 +2,7 @@
 TEMPLATE = app
 TARGET = Sterlingcoin 1.5 Full Release
 macx:TARGET = "Sterlingcoin 1.5 Full Release"
-VERSION = 1.5.1.0
+VERSION = 1.5.1.1
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 QT += core gui network webkit
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
@@ -254,7 +254,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/ui_interface.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
-    src/qt/poolbrowser.h \
     src/qt/blockbrowser.h \
     src/qt/tradingdialog.h \
     src/qt/messagepage.h \
@@ -357,7 +356,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/qtipcserver.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
-    src/qt/poolbrowser.cpp \
     src/qt/blockbrowser.cpp \
     src/qt/tradingdialog.cpp \
     src/qt/messagepage.cpp \
@@ -395,7 +393,6 @@ FORMS += \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
-    src/qt/forms/poolbrowser.ui \
     src/qt/forms/blockbrowser.ui \
     src/qt/forms/tradingdialog.ui \
     src/qt/forms/statisticspage.ui \
