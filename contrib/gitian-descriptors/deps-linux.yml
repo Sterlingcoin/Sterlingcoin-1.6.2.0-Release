@@ -123,6 +123,3 @@ script: |
   #
   cd $STAGING
 find include lib bin host | sort | zip -X@ $OUTDIR/sterlingcoin-deps-linux${GBUILD_BITS}-gitian.zip
-
-
-  
