@@ -1,0 +1,125 @@
+name: "sterlingcoin-deps"
+suites:
+- "trusty"
+architectures:
+- "i386"
+- "amd64"
+packages:
+- "g++"
+- "unzip"
+- "zip"
+- "pkg-config"
+- "libtool"
+- "faketime"
+- "bsdmainutils"
+- "automake"
+- "autoconf"
+- "git-core"
+reference_datetime: "2015-11-08 12:32:04"
+remotes: []
+files:
+- "openssl-1.0.2d.tar.gz"
+- "db-4.8.30.NC.tar.gz"
+- "miniupnpc-1.6.tar.gz"
+- "zlib-1.2.8.tar.gz"
+- "libpng-1.6.18.tar.xz"
+- "qrencode-3.4.4.tar.gz"
+- "boost_1_55_0.tar.bz2"
+script: |
+  STAGING="$HOME/install"
+  TEMPDIR="$HOME/tmp"
+  OPTFLAGS='-O2'
+  if [ "$GBUILD_BITS" == "32" ]; then
+    export LD_PRELOAD=/usr/lib/i386-linux-gnu/faketime/libfaketime.so.1;
+  else
+    export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1;
+  fi
+  export FAKETIME=$REFERENCE_DATETIME
+  export TZ=UTC
+  export LIBRARY_PATH="$STAGING/lib"
+  mkdir -p "$STAGING"
+  #
+  tar xzf openssl-1.0.2d.tar.gz
+  cd openssl-1.0.2d
+  #   need -fPIC to avoid relocation error in 64 bit builds
+  ./config no-shared no-zlib no-dso no-krb5 --openssldir=$STAGING -fPIC
+  #   need to build OpenSSL with faketime because a timestamp is embedded into cversion.o
+  make
+  make install_sw
+  cd ..
+  #
+
+  tar xzfm miniupnpc-1.6.tar.gz
+  cd miniupnpc-1.6
+  #   miniupnpc is always built with -fPIC
+  INSTALLPREFIX=$STAGING make $MAKEOPTS install
+  rm -f $STAGING/lib/libminiupnpc.so* # no way to skip shared lib build
+  cd ..
+  #
+  #
+  tar xzf db-4.8.30.NC.tar.gz
+  cd db-4.8.30.NC/build_unix
+  #   need --with-pic to avoid relocation error in 64 bit builds
+  ../dist/configure --prefix=$STAGING --enable-cxx --disable-shared --with-pic
+  # Workaround to prevent re-configuring by make; make all files have a date in the past
+  find . -print0 | xargs -r0 touch -t 200001010000
+  make $MAKEOPTS library_build
+  make install_lib install_include
+  cd ../..
+  #
+  tar --warning=no-timestamp -xjf boost_1_55_0.tar.bz2
+  cd boost_1_55_0
+  GCCVERSION=$(g++ -E -dM $(mktemp --suffix=.h) | grep __VERSION__ | cut -d ' ' -f 3 | cut -d '"' -f 2)
+  # note: bjam with -d+2 reveals that -O3 is implied by default, no need to provide it in cxxflags
+  echo "using gcc : $GCCVERSION : g++
+        :
+        <cxxflags>\"-frandom-seed=boost1 -fPIC\"
+  ;" > user-config.jam
+  ./bootstrap.sh --without-icu
+  ./bjam toolset=gcc threadapi=pthread threading=multi variant=release link=static runtime-link=shared --user-config=user-config.jam --witho$
+  cd ..
+  #
+  #tar xzf zlib-1.2.8.tar.gz
+  #cd zlib-1.2.8
+  #touch configure -d $REFERENCE_DATETIME
+  #./configure  --prefix=$STAGING
+  #make install
+  #cd ..
+  #
+  #tar xf libpng-1.6.18.tar.xz
+  #cd libpng-1.6.18
+  #touch configure -d $REFERENCE_DATETIME
+  #./configure  --prefix=$STAGING  --with-zlib-prefix=$STAGING
+  #make install
+  #cd ..
+  #
+#
+  #tar xf libpng-1.6.18.tar.xz
+  #cd libpng-1.6.18
+  #touch configure -d $REFERENCE_DATETIME
+  #./configure  --prefix=$STAGING  --with-zlib-prefix=$STAGING
+  #make install
+  #cd ..
+  #
+  tar xzf qrencode-3.4.4.tar.gz
+  cd qrencode-3.4.4
+  unset FAKETIME # unset fake time during configure, as it does some clock sanity tests
+  ./configure --prefix=$STAGING --enable-static --disable-shared --with-pic --without-tools --disable-dependency-tracking
+  # Workaround to prevent re-configuring by make; make all files have a date in the past
+  find . -print0 | xargs -r0 touch -t 200001010000
+  export FAKETIME=$REFERENCE_DATETIME
+  make $MAKEOPTS install
+  cd ..
+  #
+  # post-process all generated libraries to be deterministic
+  # extract them to a temporary directory then re-build them deterministically
+  for LIB in $(find $STAGING -name \*.a); do
+    rm -rf $TEMPDIR && mkdir $TEMPDIR && cd $TEMPDIR
+    ar xv $LIB | cut -b5- > /tmp/list.txt
+    rm $LIB
+    ar crsD $LIB $(cat /tmp/list.txt)
+  done
+  #
+  #
+  cd $STAGING
+find include lib bin host | sort | zip -X@ $OUTDIR/sterlingcoin-deps-linux${GBUILD_BITS}-gitian.zip
