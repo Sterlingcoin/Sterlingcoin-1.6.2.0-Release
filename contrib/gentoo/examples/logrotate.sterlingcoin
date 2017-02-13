@@ -1,0 +1,16 @@
+# 
+# Rotate the Sterlingcoin debug.log file(s)
+#
+
+compress
+compresscmd /bin/bzip2
+compressoptions --best
+copytruncate
+dateext
+dateyesterday
+
+/var/lib/sterlingcoin/debug.log {
+    daily
+    missingok
+    rotate 28
+}
