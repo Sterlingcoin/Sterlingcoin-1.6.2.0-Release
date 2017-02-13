@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2014-2017 The Sterlingcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -379,7 +380,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 
             pszKeyword = "Address:";
         }
-        
+
         if (GetMyExternalIP2(addrConnect, pszGet, pszKeyword, ipRet))
             return true;
     }
@@ -1116,7 +1117,6 @@ void MapPort()
 static const char *strDNSSeed[][2] = {
     {"seed1.sterlingcoin.org.uk", "seed1.sterlingcoin.org.uk"},
     {"seed2.sterlingcoin.org.uk", "seed2.sterlingcoin.org.uk"},
-    {"seed3.sterlingcoin.org.uk", "seed3.sterlingcoin.org.uk"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1174,28 +1174,7 @@ void ThreadDNSAddressSeed2(void* parg)
     printf("%d addresses found from DNS seeds\n", found);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-unsigned int pnSeed[] =
-{
-    0xdf4bd379, 0x7934d29b, 0x26bc02ad, 0x7ab743ad, 0x0ab3a7bc,
-    0x375ab5bc, 0xc90b1617, 0x5352fd17, 0x5efc6c18, 0xccdc7d18,
-    0x443d9118, 0x84031b18, 0x347c1e18, 0x86512418, 0xfcfe9031,
-    0xdb5eb936, 0xef8d2e3a, 0xcf51f23c, 0x18ab663e, 0x36e0df40,
-    0xde48b641, 0xad3e4e41, 0xd0f32b44, 0x09733b44, 0x6a51f545,
-    0xe593ef48, 0xc5f5ef48, 0x96f4f148, 0xd354d34a, 0x36206f4c,
-    0xceefe953, 0x50468c55, 0x89d38d55, 0x65e61a5a, 0x16b1b95d,
-    0x702b135e, 0x0f57245e, 0xdaab5f5f, 0xba15ef63,
-};
+unsigned int pnSeed[] = {};
 
 void DumpAddresses()
 {
