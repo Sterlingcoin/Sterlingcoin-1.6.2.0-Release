@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 The Sterlingcoin developers
+// Copyright (c) 2014-2017 The Sterlingcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,9 +20,27 @@ typedef std::map<int, unsigned int> MapModifierCheckpoints;
 static std::map<int, unsigned int> mapStakeModifierCheckpoints =
     boost::assign::map_list_of
         ( 0, 0x0e00670b )
-        ( 5000, 0x7a1ad946 )
-        ( 50000, 0x19b8159b )
+        ( 1100, 0x10a8ab20 )
+        ( 9009, 0x23e78c5e )
+        ( 12019, 0xbd0fcaa6 )
+        ( 16650, 0x17458249 )
+        ( 20000, 0x261ef741 )
+        ( 25000, 0x9b25a60e )
+        ( 32000, 0x28574db2 )
+        ( 43000, 0x37bf64bb )
+        ( 51150, 0x2591a63c )
+        ( 60000, 0x3a4a9ef7 )
+        ( 74000, 0x9280baf3 )
+        ( 79200, 0x3f57b51e )
+        ( 84000, 0x9e62c15a )
+        ( 88000, 0x8ebef8b3 )
+        ( 92000, 0x6e09a4a7 )
+        ( 96000, 0xc6aef4fc )
         ( 100000, 0xc1ad622b )
+        ( 104000, 0x21ff27e8 )
+        ( 108000, 0xef62efa9 )
+        ( 112000, 0x288ab741 )
+        ( 682683, 0xe1253729 )
     ;
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
@@ -126,7 +144,7 @@ static bool SelectBlockFromCandidates(vector<pair<int64_t, uint256> >& vSortedBy
 // selected block of a given block group in the past.
 // The selection of a block is based on a hash of the block's proof-hash and
 // the previous stake modifier.
-// Stake modifier is recomputed at a fixed time interval instead of every 
+// Stake modifier is recomputed at a fixed time interval instead of every
 // block. This is to make it difficult for an attacker to gain control of
 // additional bits in the stake modifier, even after generating a chain of
 // blocks.
@@ -262,7 +280,7 @@ static bool GetKernelStakeModifier(uint256 hashBlockFrom, uint64_t& nStakeModifi
 //                  future proof-of-stake at the time of the coin's confirmation
 //   txPrev.block.nTime: prevent nodes from guessing a good timestamp to
 //                       generate transaction for future advantage
-//   txPrev.offset: offset of txPrev inside block, to reduce the chance of 
+//   txPrev.offset: offset of txPrev inside block, to reduce the chance of
 //                  nodes generating coinstake at the same time
 //   txPrev.nTime: reduce the chance of nodes generating coinstake at the same
 //                 time
@@ -321,7 +339,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock& blockFrom, unsigned 
     if (fDebug && !fPrintProofOfStake)
     {
         printf("CheckStakeKernelHash() : using modifier 0x%016"PRIx64" at height=%d timestamp=%s for block from height=%d timestamp=%s\n",
-            nStakeModifier, nStakeModifierHeight, 
+            nStakeModifier, nStakeModifierHeight,
             DateTimeStrFormat(nStakeModifierTime).c_str(),
             mapBlockIndex[hashBlockFrom]->nHeight,
             DateTimeStrFormat(blockFrom.GetBlockTime()).c_str());

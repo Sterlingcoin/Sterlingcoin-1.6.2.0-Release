@@ -1,4 +1,7 @@
 # Copyright 2011-2012 pooler@litecoinpool.org
+# Copyright (c) 2013-2014 The BlackCoin developers
+# Copyright (c) 2016 The EverGreenCoin developers
+# Copyright (c) 2017 The Sterlingcoin developers
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -24,10 +27,6 @@
 
 
 #if defined(OPTIMIZED_SALSA) && defined(__x86_64__)
-
-#if defined(__linux__) && defined(__ELF__)
-	.section .note.GNU-stack,"",%progbits
-#endif
 
 #define scrypt_shuffle(src, so, dest, do) \
 	movl	so+60(src), %r8d; \
@@ -856,4 +855,8 @@ xmm_scrypt_core_loop2:
 	popq	%rbx
 	ret
 
+#endif
+
+#if defined(__linux__) && defined(__ELF__)
+.section .note.GNU-stack,"",%progbits
 #endif

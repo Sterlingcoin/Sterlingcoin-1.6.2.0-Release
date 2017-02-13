@@ -1,4 +1,5 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2014-2017 The Sterlingcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,27 +26,28 @@ namespace Checkpoints
     //
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        ( 0, hashGenesisBlock)
-        ( 1100, uint256("0x000000000083492bfb77f5755edd1a6baa8ed85dff4b7fba2d92ad7110f68b14"))
-        ( 9009, uint256("0x0000000000dd0076d0d310e02d9a8cf42525bab982d3206d9a4472056c2e8b2a"))
-        (12019, uint256("0x0000000000619a4e8e3300108c06f9c939d6cb8b5b2eec70946541f37fd937c4"))
-        (16650, uint256("0x0000000002628c934c680ab316fb1336cd197c9c1297384e4b897574a9b66a65"))
-        (20000, uint256("0x0000000001270d8722e42e4b8ce907a74d12f8c0b29a6092a376cd381e7cb481"))
-        (25000, uint256("0x0000000002463c42365f3d03277e268fcf8cf27824f0d1b2ac090b08456a98ee"))
-        (32000, uint256("0x0000000000a036c72213cdfdc11a5c31a90673d611427e094eaae143d0d6bf73"))
-        (43000, uint256("0x00000000009e984d63fa1308293ad479a3ae1ea454d33f18512b0eb44be5683f"))
-        (51150, uint256("0x0000000000addea2ad59da751fe4e3f835ff3b8f5e0f3c836175bb37060d9449"))
-        (60000, uint256("0x00000000013e884f2c9ab639ff3b5fe0dbec87a12c6cce9c0f875052b163e83a"))
-        (74000, uint256("0x00000000014bbb5f9047860485743b50e30e6336e716cd7817585ba5e92c61b8"))
-        (79200, uint256("0x0000000002b75f55b02c40d794596422ad8b30e7f6a595e1c91074dbbeb46ec8"))
-        (84000, uint256("0x00000000037546f4ffe1775ae97bc35095370004b7172b15eedfd33afcb98593"))
-        (88000, uint256("0x000000000069e68dcfda81eb360bd43e8b9554ccac09592b9abba2cbcdc24111"))
-        (92000, uint256("0x00000000012a39128da4dec7cb4da5a4e681e35b2ddf9cc42cfccce03d1f117d"))
-        (96000, uint256("0x377c381dbdadb506c32b986d837682304742994047251ac5bcb1ca029e5212ef"))
-        (100000, uint256("0xab08c966968e70dbaa4819945ee50134689d1bb7b28d9be5a55196baa06f043c"))
-        (104000, uint256("0xc4a6d687661e762bfe7d3151278f779d83bb8daefe83b814ce5e00be7994a33b"))
-        (108000, uint256("0x0000000000725b91f6b17c26f751df7db6da115bd467acbb30e8aa461b2aa115"))
-        (112000, uint256("0x00000000011838276ef79d764c00739ad0ab543e91d3c9a9b3c4066b38daf30a"))
+        ( 0, hashGenesisBlock )
+        ( 1100, uint256("0x000000000083492bfb77f5755edd1a6baa8ed85dff4b7fba2d92ad7110f68b14") )
+        ( 9009, uint256("0x0000000000dd0076d0d310e02d9a8cf42525bab982d3206d9a4472056c2e8b2a") )
+        ( 12019, uint256("0x0000000000619a4e8e3300108c06f9c939d6cb8b5b2eec70946541f37fd937c4") )
+        ( 16650, uint256("0x0000000002628c934c680ab316fb1336cd197c9c1297384e4b897574a9b66a65") )
+        ( 20000, uint256("0x0000000001270d8722e42e4b8ce907a74d12f8c0b29a6092a376cd381e7cb481") )
+        ( 25000, uint256("0x0000000002463c42365f3d03277e268fcf8cf27824f0d1b2ac090b08456a98ee") )
+        ( 32000, uint256("0x0000000000a036c72213cdfdc11a5c31a90673d611427e094eaae143d0d6bf73") )
+        ( 43000, uint256("0x00000000009e984d63fa1308293ad479a3ae1ea454d33f18512b0eb44be5683f") )
+        ( 51150, uint256("0x0000000000addea2ad59da751fe4e3f835ff3b8f5e0f3c836175bb37060d9449") )
+        ( 60000, uint256("0x00000000013e884f2c9ab639ff3b5fe0dbec87a12c6cce9c0f875052b163e83a") )
+        ( 74000, uint256("0x00000000014bbb5f9047860485743b50e30e6336e716cd7817585ba5e92c61b8") )
+        ( 79200, uint256("0x0000000002b75f55b02c40d794596422ad8b30e7f6a595e1c91074dbbeb46ec8") )
+        ( 84000, uint256("0x00000000037546f4ffe1775ae97bc35095370004b7172b15eedfd33afcb98593") )
+        ( 88000, uint256("0x000000000069e68dcfda81eb360bd43e8b9554ccac09592b9abba2cbcdc24111") )
+        ( 92000, uint256("0x00000000012a39128da4dec7cb4da5a4e681e35b2ddf9cc42cfccce03d1f117d") )
+        ( 96000, uint256("0x377c381dbdadb506c32b986d837682304742994047251ac5bcb1ca029e5212ef") )
+        ( 100000, uint256("0xab08c966968e70dbaa4819945ee50134689d1bb7b28d9be5a55196baa06f043c") )
+        ( 104000, uint256("0xc4a6d687661e762bfe7d3151278f779d83bb8daefe83b814ce5e00be7994a33b") )
+        ( 108000, uint256("0x0000000000725b91f6b17c26f751df7db6da115bd467acbb30e8aa461b2aa115") )
+        ( 112000, uint256("0x00000000011838276ef79d764c00739ad0ab543e91d3c9a9b3c4066b38daf30a") )
+        ( 682683, uint256("0xd2bfe2cac7585c731e80448dc6528ce56ebdd9cf328f9f7743b429f08b0cd18d") )
     ;
 
     // TestNet has no checkpoints
@@ -205,7 +207,7 @@ namespace Checkpoints
         return false;
     }
 
-    // Automatically select a suitable sync-checkpoint 
+    // Automatically select a suitable sync-checkpoint
     uint256 AutoSelectSyncCheckpoint()
     {
         const CBlockIndex *pindex = pindexBest;
@@ -250,7 +252,7 @@ namespace Checkpoints
             return false;
         if (hashBlock == hashPendingCheckpoint)
             return true;
-        if (mapOrphanBlocks.count(hashPendingCheckpoint) 
+        if (mapOrphanBlocks.count(hashPendingCheckpoint)
             && hashBlock == WantedByOrphan(mapOrphanBlocks[hashPendingCheckpoint]))
             return true;
         return false;

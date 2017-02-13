@@ -1,8 +1,8 @@
-.TH STERLINGCOIND "7" "April 2013" "sterlingcoind 1.4.0.0" 
+.TH STERLINGCOIND "7" "February 2017" "sterlingcoind 1.5.1.1"
 .SH NAME
 sterlingcoind \- peer-to-peer network based digital currency
 .SH SYNOPSIS
-sterlingcoin [options] <command> [params]  
+sterlingcoin [options] <command> [params]
 .TP
 sterlingcoin [options] help <command> - Get help for a command
 .SH DESCRIPTION
@@ -181,13 +181,13 @@ Moves funds between accounts.
 .TP
 \fBsendfrom* <'account'> <'sterlingcoinaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
 Sends amount from account's balance to 'sterlingcoinaddress'. This method will fail if there is less than amount sterlingcoins with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
-.TP     
+.TP
 \fBsendtoaddress 'sterlingcoinaddress' 'amount' ['comment'] ['comment-to']\fR
 Sends amount from the server's available balance to 'sterlingcoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
-.TP    
+.TP
 \fBstop\fR
 Stops the sterlingcoin server.
-.TP    
+.TP
 \fBvalidateaddress 'sterlingcoinaddress'\fR
 Checks that 'sterlingcoinaddress' looks like a proper sterlingcoin address. Returns an object containing:
 
@@ -203,4 +203,4 @@ sterlingcoin.conf(5)
 This manual page was written by Spencer Lievens <spencer.lievens@sterlingcoin.org.uk> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 
 On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.
-
+On Gentoo systems, the complete text of the GNU General Public License can be found in /usr/portage/licenses/GPL-3.
