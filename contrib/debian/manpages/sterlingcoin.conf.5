@@ -1,4 +1,4 @@
-.TH STERLINGCOIN.CONF "8" "April 2013" "sterlingcoin.conf 3.19"
+.TH STERLINGCOIN.CONF "8" "February 2017" "sterlingcoin.conf 1.5.1.1"
 .SH NAME
 sterlingcoin.conf \- sterlingcoin configuration file
 .SH SYNOPSIS
@@ -18,14 +18,14 @@ Enable or disable run on the test network instead of the real *sterlingcoin* net
 \fBproxy=\fR\fI'127.0.0.1:9050'\fR
 Connect via a socks4 proxy.
 .TP
-\fBaddnode=\fR\fI'10.0.0.2:8333'\fR
+\fBaddnode=\fR\fI'10.0.0.2:1141'\fR
 Use as many *addnode=* settings as you like to connect to specific peers.
 .TP
-\fBconnect=\fR\fI'10.0.0.1:8333'\fR
+\fBconnect=\fR\fI'10.0.0.1:1141'\fR
 Use as many *connect=* settings as you like to connect ONLY to specific peers.
 .TP
 \fBnoirc=\fR[\fI'1'\fR|\fI'0'\fR]
-Use or Do not use Internet Relay Chat (irc.lfnet.org #sterlingcoin channel) to find other peers.
+Use or Do not use Internet Relay Chat (irc.lfnet.org #Sterlingcoin channel) to find other peers.
 .TP
 \fRmaxconnections=\fR\fI'value'\fR
 Maximum number of inbound+outbound connections.
@@ -46,7 +46,7 @@ How many seconds *sterlingcoin* will wait for a complete RPC HTTP request, after
 \fBrpcallowip=\fR\fI'192.168.1.*'\fR
 By default, only RPC connections from localhost are allowed. Specify as many *rpcallowip=* settings as you like to allow connections from other hosts (and you may use * as a wildcard character).
 .TP
-\fBrpcport=\fR\fI'8332'\fR
+\fBrpcport=\fR\fI'8311'\fR
 Listen for RPC connections on this TCP port.
 .TP
 \fBrpcconnect=\fR\fI'127.0.0.1'\fR
@@ -88,4 +88,4 @@ sterlingcoind(1)
 This manual page was written by Spencer Lievens <spencer.lievens@sterlingcoin.org.uk> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 
 On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.
-
+On Gentoo systems, the complete text of the GNU General Public License can be found in /usr/portage/licenses/GPL-3.
