@@ -393,7 +393,6 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
     src/qt/forms/statisticspage.ui \
-    src/qt/forms/fiatpage.ui \
     src/qt/forms/messagepage.ui \
     src/qt/forms/sendmessagesdialog.ui \
     src/qt/forms/sendmessagesentry.ui \

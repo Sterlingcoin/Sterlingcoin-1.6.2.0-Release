@@ -80,7 +80,6 @@ private:
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
     MessagePage *messagePage;
-    QWidget *fiatPage;
     BlockBrowser *blockBrowser;
     StatisticsPage *statisticsPage;  
 
@@ -93,12 +92,10 @@ private:
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
-    QAction *poolAction;
     QAction *blockAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
-    QAction *fiatAction;
     QAction *statisticsAction;
     QAction *addressBookAction;
     QAction *messageAction;
@@ -125,10 +122,6 @@ private:
     RPCConsole *rpcConsole;
 
     QMovie *syncIconMovie;
-
-    bool fiatInit;
-
-    QWebFrame * fiatFrame;
 
     uint64_t nWeight;
     
@@ -179,8 +172,6 @@ private slots:
     void gotoAddressBookPage();
     /** Switch to message page */
     void gotoMessagePage();
-    /** Switch to FiatPage*/
-    void gotoFiatPage();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
     /** Switch to Statistics Page*/

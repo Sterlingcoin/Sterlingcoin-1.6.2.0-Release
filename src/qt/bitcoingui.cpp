@@ -26,7 +26,6 @@
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "wallet.h"
-#include "ui_fiatpage.h"
 #include "blockbrowser.h"
 #include "statisticspage.h"
 #include "messagepage.h"
@@ -83,7 +82,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     trayIcon(0),
     notificator(0),
     rpcConsole(0),
-    fiatInit(false),
     nWeight(0)
 {
     resize(1460, 675);
@@ -140,14 +138,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     addressBookPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab);
     messagePage   = new MessagePage(this);
 
-    fiatPage = new QWidget(this);
-    Ui::fiatPage fiat;
-    fiat.setupUi(fiatPage);
-    QPushButton * back = fiatPage->findChild<QPushButton *>("back");
-    QPushButton * reload = fiatPage->findChild<QPushButton *>("reload");
-    connect(back, SIGNAL(clicked()), fiatPage->findChild<QWebView *>("webView"), SLOT(back()));
-    connect(reload, SIGNAL(clicked()), fiatPage->findChild<QWebView *>("webView"), SLOT(reload()));
-
     blockBrowser = new BlockBrowser(this);
     statisticsPage = new StatisticsPage(this);
 
@@ -158,7 +148,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(messagePage);
-    centralWidget->addWidget(fiatPage);
     centralWidget->addWidget(blockBrowser);
     centralWidget->addWidget(statisticsPage);
     setCentralWidget(centralWidget);
@@ -288,12 +277,6 @@ void BitcoinGUI::createActions()
     messageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(messageAction);
 
-    fiatAction = new QAction(QIcon(":/icons/fiat"), tr("Buy SLG"), this);
-    fiatAction->setToolTip(tr("Buy Sterlingcoin with Fiat"));
-    fiatAction->setCheckable(true);
-    fiatAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_9));
-    tabGroup->addAction(fiatAction);
-
     blockAction = new QAction(QIcon(":/icons/block"), tr("&Transaction Explorer"), this);
     blockAction->setToolTip(tr("Explore the BlockChain"));
     blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_0));
@@ -317,8 +300,6 @@ void BitcoinGUI::createActions()
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
     connect(messageAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(messageAction, SIGNAL(triggered()), this, SLOT(gotoMessagePage()));
-    connect(fiatAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-    connect(fiatAction, SIGNAL(triggered()), this, SLOT(gotoFiatPage()));
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
     connect(statisticsAction, SIGNAL(triggered()), this, SLOT(gotoStatisticsPage()));
 
@@ -418,7 +399,6 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
     toolbar->addAction(messageAction);
-    toolbar->addAction(fiatAction);
     toolbar->addAction(blockAction);
     toolbar->addAction(statisticsAction); 
      
@@ -829,15 +809,6 @@ void BitcoinGUI::gotoOverviewPage()
     overviewAction->setChecked(true);
     centralWidget->setCurrentWidget(overviewPage);
 
-    exportAction->setEnabled(false);
-    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-}
-
-void BitcoinGUI::gotoFiatPage()
-{
-    fiatAction->setChecked(true);
-    fiatPage->findChild<QWebView *>("webView")->load(QUrl("https://www.litebit.eu/frame/slg/en/"));
-    centralWidget->setCurrentWidget(fiatPage);
     exportAction->setEnabled(false);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
