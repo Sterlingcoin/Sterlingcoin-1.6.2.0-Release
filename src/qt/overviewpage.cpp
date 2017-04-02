@@ -106,21 +106,6 @@ OverviewPage::OverviewPage(QWidget *parent) :
     filter(0)
 {
     ui->setupUi(this);
-    connect( ui->reload, SIGNAL(clicked()), this, SLOT(reloadTwitter()));
-    connect( ui->twitter->page()->networkAccessManager(),
-                 SIGNAL(sslErrors(QNetworkReply*, const QList<QSslError> & )),
-                 this,
-                 SLOT(sslErrorHandler(QNetworkReply*, const QList<QSslError> & )));
-                QSslConfiguration sslCfg = QSslConfiguration::defaultConfiguration();
-                QList<QSslCertificate> ca_list = sslCfg.caCertificates();
-                QList<QSslCertificate> ca_new = QSslCertificate::fromPath("c:/global.pem");
-                ca_list += ca_new;
-
-                sslCfg.setCaCertificates(ca_list);
-                sslCfg.setProtocol(QSsl::AnyProtocol);
-                QSslConfiguration::setDefaultConfiguration(sslCfg);
-    ui->twitter->load(QUrl("http://sterlingcoin.org.uk/feed.html"));
-    ui->twitter->show();
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
@@ -158,10 +143,6 @@ void OverviewPage::handleTransactionClicked(const QModelIndex &index)
 OverviewPage::~OverviewPage()
 {
     delete ui;
-}
-void OverviewPage::reloadTwitter()
-{
-    ui->twitter->load(QUrl("http://sterlingcoin.org.uk/feed.html"));
 }
 
 void OverviewPage::setBalance(qint64 balance, qint64 stake, qint64 unconfirmedBalance, qint64 immatureBalance)
