@@ -255,7 +255,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
     src/qt/blockbrowser.h \
-    src/qt/tradingdialog.h \
     src/qt/messagepage.h \
     src/qt/messagemodel.h \
     src/qt/sendmessagesdialog.h \
@@ -357,7 +356,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/blockbrowser.cpp \
-    src/qt/tradingdialog.cpp \
     src/qt/messagepage.cpp \
     src/qt/sendmessagesdialog.cpp \
     src/qt/sendmessagesentry.cpp \
@@ -394,7 +392,6 @@ FORMS += \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
-    src/qt/forms/tradingdialog.ui \
     src/qt/forms/statisticspage.ui \
     src/qt/forms/fiatpage.ui \
     src/qt/forms/messagepage.ui \

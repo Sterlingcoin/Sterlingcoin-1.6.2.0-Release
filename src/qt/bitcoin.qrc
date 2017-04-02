@@ -46,10 +46,8 @@
         <file>res/icons/graph.png</file>
         <file>res/icons/main.png</file>
         <file>res/icons/update.png</file>
-        <file>res/icons/bittrex-header.png</file>
         <file alias="block">res/icons/block.png</file>
         <file>res/icons/explorer-header.png</file>
-        <file alias="trading">res/icons/trade.png</file>
         <file alias="fiat">res/icons/fiat.png</file>
         <file alias="statistics">res/icons/statistics.png</file>
         <file alias="social">res/icons/social.png</file>

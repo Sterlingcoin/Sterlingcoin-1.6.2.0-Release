@@ -8,7 +8,6 @@
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
-#include "tradingdialog.h"
 #include "signverifymessagedialog.h"
 #include "optionsdialog.h"
 #include "aboutdialog.h"
@@ -140,7 +139,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     addressBookPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::SendingTab);
     messagePage   = new MessagePage(this);
-    tradingDialogPage = new tradingDialog(this);
 
     fiatPage = new QWidget(this);
     Ui::fiatPage fiat;
@@ -160,7 +158,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(messagePage);
-    centralWidget->addWidget(tradingDialogPage);
     centralWidget->addWidget(fiatPage);
     centralWidget->addWidget(blockBrowser);
     centralWidget->addWidget(statisticsPage);
@@ -228,8 +225,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
 
-    connect(TradingAction, SIGNAL(triggered()), tradingDialogPage, SLOT(InitTrading()));
-
     // Double-clicking on a transaction on the transaction history page shows details
     connect(transactionView, SIGNAL(doubleClicked(QModelIndex)), transactionView, SLOT(showDetails()));
 
@@ -293,12 +288,6 @@ void BitcoinGUI::createActions()
     messageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(messageAction);
 
-    TradingAction = new QAction(QIcon(":/icons/trading"), tr("&Trade"), this);
-    TradingAction ->setToolTip(tr("Start Trading"));
-    TradingAction ->setCheckable(true);
-    TradingAction ->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
-    tabGroup->addAction(TradingAction);
-
     fiatAction = new QAction(QIcon(":/icons/fiat"), tr("Buy SLG"), this);
     fiatAction->setToolTip(tr("Buy Sterlingcoin with Fiat"));
     fiatAction->setCheckable(true);
@@ -328,7 +317,6 @@ void BitcoinGUI::createActions()
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
     connect(messageAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(messageAction, SIGNAL(triggered()), this, SLOT(gotoMessagePage()));
-    connect(TradingAction, SIGNAL(triggered()), this, SLOT(gotoTradingPage()));
     connect(fiatAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(fiatAction, SIGNAL(triggered()), this, SLOT(gotoFiatPage()));
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
@@ -430,7 +418,6 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
     toolbar->addAction(messageAction);
-    toolbar->addAction(TradingAction);
     toolbar->addAction(fiatAction);
     toolbar->addAction(blockAction);
     toolbar->addAction(statisticsAction); 
@@ -844,16 +831,6 @@ void BitcoinGUI::gotoOverviewPage()
 
     exportAction->setEnabled(false);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-}
-
-void BitcoinGUI::gotoTradingPage()
-{
-
-     TradingAction->setChecked(true);
-     centralWidget->setCurrentWidget(tradingDialogPage);
-
-  //  exportAction->setEnabled(false);
-  //  disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 
 void BitcoinGUI::gotoFiatPage()

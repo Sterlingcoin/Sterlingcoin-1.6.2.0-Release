@@ -22,7 +22,6 @@ class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
-class tradingDialog;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -81,7 +80,6 @@ private:
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
     MessagePage *messagePage;
-    tradingDialog   *tradingDialogPage;
     QWidget *fiatPage;
     BlockBrowser *blockBrowser;
     StatisticsPage *statisticsPage;  
@@ -120,7 +118,6 @@ private:
     QAction *lockWalletAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
-    QAction *TradingAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -182,8 +179,6 @@ private slots:
     void gotoAddressBookPage();
     /** Switch to message page */
     void gotoMessagePage();
-    /** Switch to trading page */
-    void gotoTradingPage();
     /** Switch to FiatPage*/
     void gotoFiatPage();
     /** Switch to block explorer*/
