@@ -293,12 +293,6 @@ void BitcoinGUI::createActions()
     messageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(messageAction);
 
-    poolAction = new QAction(QIcon(":/icons/markets"), tr("&Market Data"), this);
-    poolAction->setToolTip(tr("Market"));
-    poolAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
-    poolAction->setCheckable(true);
-    tabGroup->addAction(poolAction);
-
     TradingAction = new QAction(QIcon(":/icons/trading"), tr("&Trade"), this);
     TradingAction ->setToolTip(tr("Start Trading"));
     TradingAction ->setCheckable(true);
@@ -436,7 +430,6 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
     toolbar->addAction(messageAction);
-    toolbar->addAction(poolAction);
     toolbar->addAction(TradingAction);
     toolbar->addAction(fiatAction);
     toolbar->addAction(blockAction);
