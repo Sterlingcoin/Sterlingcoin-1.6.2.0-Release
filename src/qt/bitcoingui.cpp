@@ -242,49 +242,49 @@ void BitcoinGUI::createActions()
     QActionGroup *tabGroup = new QActionGroup(this);
 
     overviewAction = new QAction(QIcon(":/icons/overview"), tr("&Overview"), this);
-    overviewAction->setToolTip(tr("Show general overview of wallet"));
+    overviewAction->setToolTip(tr("Show general overview of your Sterlingcoin balance."));
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
     tabGroup->addAction(overviewAction);
 
-    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a Sterlingcoin address"));
+    sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
+    sendCoinsAction->setToolTip(tr("Send Sterlingcoin to a Sterlingcoin address."));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
-    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive coins"), this);
-    receiveCoinsAction->setToolTip(tr("Show the list of addresses for receiving payments"));
+    receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
+    receiveCoinsAction->setToolTip(tr("Show and edit the list of your addresses for receiving Sterlingcoin.\n Sign messages using your Sterlingcoin addresses."));
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
     historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
-    historyAction->setToolTip(tr("Browse transaction history"));
+    historyAction->setToolTip(tr("Browse your Sterlingcoin transaction history."));
     historyAction->setCheckable(true);
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_4));
     tabGroup->addAction(historyAction);
 
     addressBookAction = new QAction(QIcon(":/icons/address-book"), tr("&Address Book"), this);
-    addressBookAction->setToolTip(tr("Edit the list of stored addresses and labels"));
+    addressBookAction->setToolTip(tr("View and edit the list of your stored Sterlingcoin addresses and labels.\n Verify signed messages from other's Sterlingcoin addresses."));
     addressBookAction->setCheckable(true);
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
 
-    messageAction = new QAction(QIcon(":/icons/social"), tr("&Messages"), this);
-    messageAction->setToolTip(tr("View and Send Encrypted messages"));
+    messageAction = new QAction(QIcon(":/icons/social"), tr("&Messaging"), this);
+    messageAction->setToolTip(tr("View and send encrypted messages."));
     messageAction->setCheckable(true);
     messageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(messageAction);
 
     blockAction = new QAction(QIcon(":/icons/block"), tr("&Explorer"), this);
-    blockAction->setToolTip(tr("Explore the BlockChain"));
+    blockAction->setToolTip(tr("Explore the Sterlingcoin blockchain."));
     blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
     blockAction->setCheckable(true);
     tabGroup->addAction(blockAction);
 
     statisticsAction = new QAction(QIcon(":/icons/statistics"), tr("&Statistics"), this);
-    statisticsAction->setToolTip(tr("Sterlingcoin Network Statistics"));
+    statisticsAction->setToolTip(tr("View Sterlingcoin Network Statistics."));
     blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
     statisticsAction->setCheckable(true);
     tabGroup->addAction(statisticsAction);
