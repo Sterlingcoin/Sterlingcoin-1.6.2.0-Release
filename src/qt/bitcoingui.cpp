@@ -277,14 +277,15 @@ void BitcoinGUI::createActions()
     messageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
     tabGroup->addAction(messageAction);
 
-    blockAction = new QAction(QIcon(":/icons/block"), tr("&Transaction Explorer"), this);
+    blockAction = new QAction(QIcon(":/icons/block"), tr("&Explorer"), this);
     blockAction->setToolTip(tr("Explore the BlockChain"));
-    blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_0));
+    blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
     blockAction->setCheckable(true);
     tabGroup->addAction(blockAction);
 
     statisticsAction = new QAction(QIcon(":/icons/statistics"), tr("&Statistics"), this);
-    statisticsAction->setToolTip(tr("SLG PoW/PoS Statistics"));
+    statisticsAction->setToolTip(tr("Sterlingcoin Network Statistics"));
+    blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
     statisticsAction->setCheckable(true);
     tabGroup->addAction(statisticsAction);
 
