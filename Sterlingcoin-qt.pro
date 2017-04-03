@@ -3,7 +3,7 @@ TEMPLATE = app
 TARGET = Sterlingcoin 1.6
 macx:TARGET = "Sterlingcoin 1.6"
 VERSION = 1.6.0.0
-INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
+INCLUDEPATH += src src/json src/qt
 QT += core gui network webkit
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_DISABLE_DEPRECATED_BEFORE=0
@@ -255,11 +255,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
     src/qt/blockbrowser.h \
-    src/qt/messagepage.h \
-    src/qt/messagemodel.h \
-    src/qt/sendmessagesdialog.h \
-    src/qt/sendmessagesentry.h \
-    src/qt/qvalidatedtextedit.h \
     src/smessage.h \
     src/lz4/lz4.h \
     src/xxhash/xxhash.h \
@@ -290,7 +285,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/txdb-leveldb.h \
     src/genesis.h \
     src/qt/winshutdownmonitor.h \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.h    
 
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
@@ -356,11 +350,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/blockbrowser.cpp \
-    src/qt/messagepage.cpp \
-    src/qt/sendmessagesdialog.cpp \
-    src/qt/sendmessagesentry.cpp \
-    src/qt/messagemodel.cpp \
-    src/qt/qvalidatedtextedit.cpp \
     src/rpcsmessage.cpp \
     src/smessage.cpp \
     src/lz4/lz4.c \
@@ -372,7 +361,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/scrypt.cpp \
     src/pbkdf2.cpp \
     src/qt/winshutdownmonitor.cpp \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.cpp
 
 RESOURCES += \
     src/qt/bitcoin.qrc
@@ -393,10 +381,6 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
     src/qt/forms/statisticspage.ui \
-    src/qt/forms/messagepage.ui \
-    src/qt/forms/sendmessagesdialog.ui \
-    src/qt/forms/sendmessagesentry.ui \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h

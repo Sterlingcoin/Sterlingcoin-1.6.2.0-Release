@@ -11,13 +11,11 @@
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
-class MessageModel;
 class TransactionView;
 class OverviewPage;
 class StatisticsPage;
 class BlockBrowser;
 class AddressBookPage;
-class MessagePage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
@@ -55,8 +53,6 @@ public:
     */
     void setWalletModel(WalletModel *walletModel);
 
-    void setMessageModel(MessageModel *messageModel);
-
     /// Get window identifier of QMainWindow (BitcoinGUI)
     WId getMainWinId() const;
 
@@ -69,7 +65,6 @@ protected:
 private:
     ClientModel *clientModel;
     WalletModel *walletModel;
-    MessageModel *messageModel;
 
     QStackedWidget *centralWidget;
 
@@ -79,7 +74,6 @@ private:
     AddressBookPage *receiveCoinsPage;
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
-    MessagePage *messagePage;
     BlockBrowser *blockBrowser;
     StatisticsPage *statisticsPage;  
 
@@ -98,7 +92,6 @@ private:
     QAction *sendCoinsAction;
     QAction *statisticsAction;
     QAction *addressBookAction;
-    QAction *messageAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *signMessageAction2;
@@ -170,8 +163,6 @@ private slots:
     void gotoHistoryPage();
     /** Switch to address book page */
     void gotoAddressBookPage();
-    /** Switch to message page */
-    void gotoMessagePage();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
     /** Switch to Statistics Page*/
@@ -193,11 +184,6 @@ private slots:
         The new items are those between start and end inclusive, under the given parent item.
     */
     void incomingTransaction(const QModelIndex & parent, int start, int end);
-     /** Show incoming message notification for new messages.
-
-        The new items are those between start and end inclusive, under the given parent item.
-    */
-    void incomingMessage(const QModelIndex & parent, int start, int end);
     /** Encrypt the wallet */
     void encryptWallet(bool status);
     /** Backup the wallet */

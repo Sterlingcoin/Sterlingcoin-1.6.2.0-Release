@@ -46,7 +46,6 @@
         <file alias="block">res/icons/block.png</file>
         <file>res/icons/explorer-header.png</file>
         <file alias="statistics">res/icons/statistics.png</file>
-        <file alias="social">res/icons/social.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
