@@ -255,10 +255,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
     src/qt/blockbrowser.h \
-    src/smessage.h \
-    src/lz4/lz4.h \
-    src/xxhash/xxhash.h \
-    src/xxhash/xxhash.c \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -350,9 +346,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/blockbrowser.cpp \
-    src/rpcsmessage.cpp \
-    src/smessage.cpp \
-    src/lz4/lz4.c \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -420,8 +413,7 @@ OTHER_FILES += README.md \
 
 # "Other files" to show in Qt Creator
 OTHER_FILES += \
-        doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc \
-    src/lz4/LICENSE
+        doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc
 
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
