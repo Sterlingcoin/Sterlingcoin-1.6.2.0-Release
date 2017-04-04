@@ -29,7 +29,6 @@
 #include "blockbrowser.h"
 #include "statisticspage.h"
 
-
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
 #endif
@@ -82,7 +81,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0),
     nWeight(0)
 {
-    resize(1460, 675);
+    resize(960, 675);
     setWindowTitle(tr("Sterlingcoin") + " - " + tr("Wallet"));
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/sterlingcoin"));
@@ -296,10 +295,10 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Sterlingcoin"), this);
+    aboutAction = new QAction(QIcon(":/icons/sterlingcoin"), tr("&About Sterlingcoin"), this);
     aboutAction->setToolTip(tr("Show information about Sterlingcoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
-    aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
+    aboutQtAction = new QAction(QIcon(":/icons/qtlogo"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);

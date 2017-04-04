@@ -39,13 +39,14 @@
         <file alias="debugwindow">res/icons/debugwindow.png</file>
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
-        <file alias="bitcoin">res/icons/sterlingcoin.png</file>
-        <file alias="bitcoin_testnet">res/icons/sterlingcoin_testnet.png</file>
+        <file alias="sterlingcoin">res/icons/sterlingcoin.png</file>
+        <file alias="sterlingcoin_testnet">res/icons/sterlingcoin_testnet.png</file>
         <file alias="toolbar">res/icons/Sterlingcoin_Round_NO_BG_16x16x32.png</file>
         <file alias="toolbar_testnet">res/icons/Sterlingcoin_Round_NO_BG_16x16x32_testnet.png</file>
         <file alias="block">res/icons/block.png</file>
         <file>res/icons/explorer-header.png</file>
         <file alias="statistics">res/icons/statistics.png</file>
+        <file alias="qtlogo">res/icons/qtlogo.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
@@ -87,6 +88,7 @@
         <file alias="pl">locale/bitcoin_pl.qm</file>
         <file alias="pt_BR">locale/bitcoin_pt_BR.qm</file>
         <file alias="pt_PT">locale/bitcoin_pt_PT.qm</file>
+        <file alias="ro_RO">locale/bitcoin_ro_RO.qm</file>
         <file alias="ru">locale/bitcoin_ru.qm</file>
         <file alias="sk">locale/bitcoin_sk.qm</file>
         <file alias="sl_SI">locale/bitcoin_sl_SI.qm</file>
@@ -95,5 +97,6 @@
         <file alias="uk">locale/bitcoin_uk.qm</file>
         <file alias="zh_CN">locale/bitcoin_zh_CN.qm</file>
         <file alias="zh_TW">locale/bitcoin_zh_TW.qm</file>
+        <file>locale/bitcoin_ro_RO.qm</file>
     </qresource>
 </RCC>
