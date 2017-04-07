@@ -4,6 +4,7 @@
 #include <QString>
 #include <QObject>
 #include <QMessageBox>
+#include <QUrl>
 
 QT_BEGIN_NAMESPACE
 class QFont;

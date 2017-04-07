@@ -3,8 +3,6 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
-#include <QWebFrame>
-#include <QWebElement>
 
 #include <stdint.h>
 
@@ -13,7 +11,6 @@ class ClientModel;
 class WalletModel;
 class TransactionView;
 class OverviewPage;
-class StatisticsPage;
 class BlockBrowser;
 class AddressBookPage;
 class SendCoinsDialog;
@@ -75,7 +72,6 @@ private:
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
     BlockBrowser *blockBrowser;
-    StatisticsPage *statisticsPage;  
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -90,7 +86,6 @@ private:
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
-    QAction *statisticsAction;
     QAction *addressBookAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
@@ -165,8 +160,6 @@ private slots:
     void gotoAddressBookPage();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
-    /** Switch to Statistics Page*/
-    void gotoStatisticsPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */

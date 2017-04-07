@@ -474,26 +474,26 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
@@ -501,27 +501,27 @@
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -539,26 +539,26 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
@@ -566,27 +566,27 @@
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -604,26 +604,26 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
@@ -631,27 +631,27 @@
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>64</red>
-           <green>0</green>
+           <red>255</red>
+           <green>255</green>
            <blue>255</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -668,7 +668,7 @@
       </palette>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(178,178,178);
+      <string notr="true">background: transparent;
 color: rgb(255,255,255);</string>
      </property>
      <property name="tabChangesFocus">
@@ -693,26 +693,26 @@ color: rgb(255,255,255);</string>
            <colorrole role="WindowText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Button">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Text">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
@@ -729,27 +729,27 @@ color: rgb(255,255,255);</string>
            <colorrole role="ButtonText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Base">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Window">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
@@ -776,26 +776,26 @@ color: rgb(255,255,255);</string>
            <colorrole role="WindowText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Button">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Text">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
@@ -812,27 +812,27 @@ color: rgb(255,255,255);</string>
            <colorrole role="ButtonText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Base">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Window">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
@@ -859,26 +859,26 @@ color: rgb(255,255,255);</string>
            <colorrole role="WindowText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Button">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Text">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
@@ -895,27 +895,27 @@ color: rgb(255,255,255);</string>
            <colorrole role="ButtonText">
             <brush brushstyle="SolidPattern">
              <color alpha="255">
-              <red>64</red>
-              <green>0</green>
+              <red>255</red>
+              <green>255</green>
               <blue>255</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Base">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
            <colorrole role="Window">
             <brush brushstyle="SolidPattern">
-             <color alpha="255">
-              <red>138</red>
-              <green>138</green>
-              <blue>138</blue>
+             <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
              </color>
             </brush>
            </colorrole>
@@ -944,8 +944,7 @@ color: rgb(255,255,255);</string>
          <bool>false</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(138,138,138);
-color: rgb(255,255,255);</string>
+         <string notr="true">background: transparent; color: rgb(255,255,255);</string>
         </property>
         <property name="text">
          <string>Request Payment</string>
@@ -960,7 +959,10 @@ color: rgb(255,255,255);</string>
         <item row="1" column="0">
          <widget class="QLabel" name="lblLabel">
           <property name="autoFillBackground">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: transparent; color: rgb(255,255,255);</string>
           </property>
           <property name="text">
            <string>Label:</string>
@@ -984,54 +986,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1049,54 +1051,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1114,54 +1116,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1178,15 +1180,18 @@ color: rgb(255,255,255);</string>
            </palette>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+           <string notr="true">background-color: rgb(255,255,255);
+color: rgb(138,138,138);</string>
           </property>
          </widget>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="lblMessage">
           <property name="autoFillBackground">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: transparent; color: rgb(255,255,255);</string>
           </property>
           <property name="text">
            <string>Message:</string>
@@ -1210,54 +1215,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1275,54 +1280,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1340,54 +1345,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1404,8 +1409,8 @@ color: rgb(255,255,255);</string>
            </palette>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+           <string notr="true">background-color: rgb(255,255,255);
+color: rgb(138,138,138);</string>
           </property>
          </widget>
         </item>
@@ -1418,7 +1423,10 @@ color: rgb(255,255,255);</string>
            </sizepolicy>
           </property>
           <property name="autoFillBackground">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: transparent; color: rgb(255,255,255);</string>
           </property>
           <property name="text">
            <string>Amount:</string>
@@ -1451,54 +1459,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1516,54 +1524,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1581,54 +1589,54 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
-                <blue>255</blue>
+                <red>138</red>
+                <green>138</green>
+                <blue>138</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
                </color>
               </brush>
              </colorrole>
@@ -1645,8 +1653,8 @@ color: rgb(255,255,255);</string>
            </palette>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+           <string notr="true">background-color: rgb(255,255,255);
+color: rgb(138,138,138);</string>
           </property>
          </widget>
         </item>
@@ -1675,26 +1683,26 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
@@ -1702,27 +1710,27 @@ color: rgb(255,255,255);</string>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
@@ -1740,26 +1748,26 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
@@ -1767,27 +1775,27 @@ color: rgb(255,255,255);</string>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
@@ -1805,26 +1813,26 @@ color: rgb(255,255,255);</string>
              <colorrole role="WindowText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Button">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Text">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
@@ -1832,27 +1840,27 @@ color: rgb(255,255,255);</string>
              <colorrole role="ButtonText">
               <brush brushstyle="SolidPattern">
                <color alpha="255">
-                <red>64</red>
-                <green>0</green>
+                <red>255</red>
+                <green>255</green>
                 <blue>255</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Base">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
              <colorrole role="Window">
               <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>178</red>
-                <green>178</green>
-                <blue>178</blue>
+               <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
                </color>
               </brush>
              </colorrole>
@@ -1869,8 +1877,7 @@ color: rgb(255,255,255);</string>
            </palette>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+           <string notr="true">background: transparent; color: rgb(255,255,255);</string>
           </property>
           <property name="text">
            <string>&amp;Save As...</string>

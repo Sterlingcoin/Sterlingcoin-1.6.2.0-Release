@@ -4,8 +4,8 @@ TARGET = Sterlingcoin-v1.6
 macx:TARGET = "Sterlingcoin-v1.6"
 VERSION = 1.6.0.0
 INCLUDEPATH += src src/json src/qt
-QT += core gui network webkit
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
+QT += core gui network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_DISABLE_DEPRECATED_BEFORE=0
 CONFIG += no_include_pwd
 CONFIG += thread
@@ -187,7 +187,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/aboutdialog.h \
     src/qt/editaddressdialog.h \
     src/qt/bitcoinaddressvalidator.h \
-    src/qt/statisticspage.h \
     src/alert.h \
     src/addrman.h \
     src/base58.h \
@@ -294,7 +293,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
     src/qt/bitcoinaddressvalidator.cpp \
-    src/qt/statisticspage.cpp \
     src/alert.cpp \
     src/version.cpp \
     src/sync.cpp \
@@ -357,7 +355,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
 
 RESOURCES += \
     src/qt/bitcoin.qrc
-    src/qt/res/themes/qdarkstyle/style.qrc
 
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
@@ -373,7 +370,6 @@ FORMS += \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
-    src/qt/forms/statisticspage.ui \
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
@@ -471,7 +467,7 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/darkcoin.icns
+macx:ICON = src/qt/res/icons/sterlingcoin.icns
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread
