@@ -882,7 +882,7 @@ color: rgb(255,255,255);</string>
         </property>
         <property name="font">
          <font>
-          <pointsize>11</pointsize>
+          <pointsize>14</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -6485,7 +6485,7 @@ color: rgb(255,255,255);</string>
       <x>270</x>
       <y>110</y>
       <width>151</width>
-      <height>17</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="palette">

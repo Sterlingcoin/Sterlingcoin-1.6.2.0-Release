@@ -473,6 +473,9 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="warningLabel">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
      </property>
@@ -725,8 +728,7 @@
         </palette>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(138, 138, 138);
-color: rgb(255, 255, 255);</string>
+        <string notr="true"/>
        </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
@@ -945,8 +947,7 @@ color: rgb(255, 255, 255);</string>
         </palette>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(138, 138, 138);
-color: rgb(255, 255, 255);</string>
+        <string notr="true"/>
        </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
@@ -1165,8 +1166,7 @@ color: rgb(255, 255, 255);</string>
         </palette>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(138, 138, 138);
-color: rgb(255, 255, 255);</string>
+        <string notr="true"/>
        </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
@@ -1182,7 +1182,7 @@ color: rgb(255, 255, 255);</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background: transparent;</string>
+        <string notr="true">background: transparent; color: red;</string>
        </property>
        <property name="text">
         <string/>
