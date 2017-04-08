@@ -22,7 +22,7 @@ BEGIN
             VALUE "FileDescription",    "Sterlingcoin-Qt (OSS GUI client for Sterlingcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "Sterlingcoin-qt"
-            VALUE "LegalCopyright",     "2014 The Sterlingcoin Developers"
+            VALUE "LegalCopyright",     "2014 - 2017 The Sterlingcoin Developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "Sterlingcoin-qt.exe"
             VALUE "ProductName",        "Sterlingcoin-Qt"

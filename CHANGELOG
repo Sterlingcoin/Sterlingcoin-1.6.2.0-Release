@@ -1,3 +1,16 @@
+**Sterlingcoin 1.6 Release CHANGELOG**
+Update alert private key and sync checkpoint server private key
+Remove un-used bits (fiat, market data, twitter, messaging, ect). Delist Bittrex from the wallet.
+Remove webkit dependency. Remove dependecies for messaging.
+Splash screen revisions. Fix testnet splash screen functionality.
+Bring statistics onto overview and added nethash.
+Update various icons to match new style.
+New checkpoints.
+Rollup improvements from 1.5.2.1 for release.
+Many aesthetic enchancements.
+Add support for CWI seednodes.
+Various more descriptive tooltip and wording changes.
+
 **Sterlingcoin 1.5 Full Release CHANGELOG**
 ------------------------------
 Updated LevelDB to 1.18

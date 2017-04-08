@@ -18,7 +18,7 @@ static const int STATUSBAR_ICONSIZE = 16;
 /* Transaction list -- negative amount */
 #define COLOR_NEGATIVE QColor(255, 0, 0)
 /* Transaction list -- bare address (without label) */
-#define COLOR_BAREADDRESS QColor(195, 195, 195)
+#define COLOR_BAREADDRESS QColor(138, 138, 138)
 
 /* Tooltips longer than this (in characters) are converted into rich text,
    so that they can be word-wrapped.

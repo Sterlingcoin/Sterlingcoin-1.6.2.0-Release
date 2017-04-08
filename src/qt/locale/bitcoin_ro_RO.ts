@@ -3153,11 +3153,6 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;sterlingcoin Alert&quot; admin@
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Nu se poate folosi %s pe acest calculator (eroarea returnată este %d, %s)</translation>
     </message>
-     <message>
-        <location line="+55"/>
-        <source>Find peers using internet relay chat (default: 1)</source>
-        <translation>Find peers using internet relay chat (default: 1)</translation>
-    </message>
     <message>
         <location line="-130"/>
         <source>Connect through socks proxy</source>
@@ -3262,11 +3257,6 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;sterlingcoin Alert&quot; admin@
         <location line="+122"/>
         <source>Unable to bind to %s on this computer. sterlingcoin is probably already running.</source>
         <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil sterlingcoin ruleaza</translation>
-    </message>
-     <message>
-        <location line="+55"/>
-        <source>Find peers using internet relay chat (default: 1)</source>
-        <translation>Find peers using internet relay chat (default: 1)</translation>
     </message>
     <message>
         <location line="-97"/>

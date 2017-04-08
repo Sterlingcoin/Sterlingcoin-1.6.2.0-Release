@@ -48,6 +48,7 @@ namespace Checkpoints
         ( 108000, uint256("0x0000000000725b91f6b17c26f751df7db6da115bd467acbb30e8aa461b2aa115") )
         ( 112000, uint256("0x00000000011838276ef79d764c00739ad0ab543e91d3c9a9b3c4066b38daf30a") )
         ( 682683, uint256("0xd2bfe2cac7585c731e80448dc6528ce56ebdd9cf328f9f7743b429f08b0cd18d") )
+        ( 716675, uint256("0xe698e470bebcfb30fe7c0a5ac15b02bcc8b16aabf505b971888527414f5ae907") )
     ;
 
     // TestNet has no checkpoints
@@ -370,7 +371,7 @@ namespace Checkpoints
 }
 
 // Sterlingcoin: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMasterPubKey = "04a18357665ed7a802dcf252ef528d3dc786da38653b51d1ab8e9f4820b55aca807892a056781967315908ac205940ec9d6f2fd0a85941966971eac7e475a27826";
+const std::string CSyncCheckpoint::strMasterPubKey = "04150fadb2a27a5b5bb029dab8b4f4d1655762ff99b278becce4423cfedf081d60adf96c54e537bfa6720bdd0a05a444de79eafde41611e6fff1aeeb2edf72956b";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 

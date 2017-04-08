@@ -460,7 +460,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Quantity:</string>
@@ -619,7 +619,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Bytes:</string>
@@ -794,7 +794,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Amount:</string>
@@ -953,7 +953,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Priority:</string>
@@ -1128,7 +1128,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Fee:</string>
@@ -1290,7 +1290,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Low Output:</string>
@@ -1468,7 +1468,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>After Fee:</string>
@@ -1657,7 +1657,7 @@
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:bold;</string>
+          <string notr="true">background: transparent; color: rgb(255,255,255);</string>
          </property>
          <property name="text">
           <string>Change:</string>
@@ -1828,17 +1828,53 @@
      <property name="palette">
       <palette>
        <active>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
            <red>90</red>
            <green>104</green>
            <blue>118</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
        </active>
        <inactive>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -1848,8 +1884,35 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
        </inactive>
        <disabled>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -1859,14 +1922,35 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
        </disabled>
       </palette>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;</string>
+     </property>
      <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
+      <enum>QFrame::Plain</enum>
      </property>
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
@@ -2082,7 +2166,7 @@ color: rgb(255,255,255);</string>
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(138, 138, 138);</string>
+          <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
           <string>Tree mode</string>
@@ -2104,7 +2188,7 @@ color: rgb(255,255,255);</string>
           <bool>false</bool>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(138, 138, 138);</string>
+          <string notr="true">background: transparent;</string>
          </property>
          <property name="text">
           <string>List mode</string>
@@ -2144,10 +2228,10 @@ color: rgb(255,255,255);</string>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2215,20 +2299,20 @@ color: rgb(255,255,255);</string>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2281,10 +2365,10 @@ color: rgb(255,255,255);</string>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2352,20 +2436,20 @@ color: rgb(255,255,255);</string>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2418,10 +2502,10 @@ color: rgb(255,255,255);</string>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2489,20 +2573,20 @@ color: rgb(255,255,255);</string>
          </brush>
         </colorrole>
         <colorrole role="Base">
-         <brush brushstyle="SolidPattern">
+         <brush brushstyle="NoBrush">
           <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Window">
          <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>178</red>
-           <green>178</green>
-           <blue>178</blue>
+          <color alpha="0">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -2552,8 +2636,14 @@ color: rgb(255,255,255);</string>
       <bool>true</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(178, 178, 178);
+      <string notr="true">background: transparent;
 color: rgb(255,255,255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
      </property>
      <property name="sortingEnabled">
       <bool>false</bool>
@@ -2807,9 +2897,11 @@ color: rgb(255,255,255);</string>
        </disabled>
       </palette>
      </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(178, 178, 178);
-color: rgb(255,255,255);</string>
+      <string notr="true"/>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>

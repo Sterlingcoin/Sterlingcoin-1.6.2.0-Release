@@ -1,11 +1,11 @@
 #############################################################################################################################
 TEMPLATE = app
-TARGET = Sterlingcoin 1.5 Full Release
-macx:TARGET = "Sterlingcoin 1.5 Full Release"
-VERSION = 1.5.2.1
-INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
-QT += core gui network webkit
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport webkitwidgets
+TARGET = Sterlingcoin-v1.6
+macx:TARGET = "Sterlingcoin-v1.6"
+VERSION = 1.6.0.0
+INCLUDEPATH += src src/json src/qt
+QT += core gui network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_DISABLE_DEPRECATED_BEFORE=0
 CONFIG += no_include_pwd
 CONFIG += thread
@@ -187,7 +187,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/aboutdialog.h \
     src/qt/editaddressdialog.h \
     src/qt/bitcoinaddressvalidator.h \
-    src/qt/statisticspage.h \
     src/alert.h \
     src/addrman.h \
     src/base58.h \
@@ -255,16 +254,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/qt/qcustomplot.h \
     src/qt/blockbrowser.h \
-    src/qt/tradingdialog.h \
-    src/qt/messagepage.h \
-    src/qt/messagemodel.h \
-    src/qt/sendmessagesdialog.h \
-    src/qt/sendmessagesentry.h \
-    src/qt/qvalidatedtextedit.h \
-    src/smessage.h \
-    src/lz4/lz4.h \
-    src/xxhash/xxhash.h \
-    src/xxhash/xxhash.c \
     src/version.h \
     src/netbase.h \
     src/clientversion.h \
@@ -291,7 +280,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/txdb-leveldb.h \
     src/genesis.h \
     src/qt/winshutdownmonitor.h \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.h    
 
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
@@ -305,7 +293,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
     src/qt/bitcoinaddressvalidator.cpp \
-    src/qt/statisticspage.cpp \
     src/alert.cpp \
     src/version.cpp \
     src/sync.cpp \
@@ -357,15 +344,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/rpcconsole.cpp \
     src/qt/qcustomplot.cpp \
     src/qt/blockbrowser.cpp \
-    src/qt/tradingdialog.cpp \
-    src/qt/messagepage.cpp \
-    src/qt/sendmessagesdialog.cpp \
-    src/qt/sendmessagesentry.cpp \
-    src/qt/messagemodel.cpp \
-    src/qt/qvalidatedtextedit.cpp \
-    src/rpcsmessage.cpp \
-    src/smessage.cpp \
-    src/lz4/lz4.c \
     src/noui.cpp \
     src/kernel.cpp \
     src/scrypt-arm.S \
@@ -374,11 +352,9 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/scrypt.cpp \
     src/pbkdf2.cpp \
     src/qt/winshutdownmonitor.cpp \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.cpp
 
 RESOURCES += \
     src/qt/bitcoin.qrc
-    src/qt/res/themes/qdarkstyle/style.qrc
 
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
@@ -394,13 +370,6 @@ FORMS += \
     src/qt/forms/rpcconsole.ui \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
-    src/qt/forms/tradingdialog.ui \
-    src/qt/forms/statisticspage.ui \
-    src/qt/forms/fiatpage.ui \
-    src/qt/forms/messagepage.ui \
-    src/qt/forms/sendmessagesdialog.ui \
-    src/qt/forms/sendmessagesentry.ui \
-    src/qt/plugins/mrichtexteditor/mrichtextedit.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
@@ -440,8 +409,7 @@ OTHER_FILES += README.md \
 
 # "Other files" to show in Qt Creator
 OTHER_FILES += \
-        doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc \
-    src/lz4/LICENSE
+        doc/*.rst doc/*.txt doc/README README.md res/bitcoin-qt.rc
 
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
@@ -499,7 +467,7 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit -framework CoreServices
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/darkcoin.icns
+macx:ICON = src/qt/res/icons/sterlingcoin.icns
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread

@@ -9,17 +9,20 @@
 #include "guiutil.h"
 #include "guiconstants.h"
 #include "askpassphrasedialog.h"
+#include "bitcoinrpc.h"
+
+#include "main.h"
+#include "wallet.h"
+#include "init.h"
+#include "base58.h"
+#include "clientmodel.h"
+#include "blockbrowser.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>
-#include <QWebView>
-#include <QSslError>
-#include <QNetworkReply>
-#include <QSslConfiguration>
-#include <QUrl>
 
 #define DECORATION_SIZE 64
-#define NUM_ITEMS 6
+#define NUM_ITEMS 7
 
 class TxViewDelegate : public QAbstractItemDelegate
 {
@@ -106,21 +109,6 @@ OverviewPage::OverviewPage(QWidget *parent) :
     filter(0)
 {
     ui->setupUi(this);
-    connect( ui->reload, SIGNAL(clicked()), this, SLOT(reloadTwitter()));
-    connect( ui->twitter->page()->networkAccessManager(),
-                 SIGNAL(sslErrors(QNetworkReply*, const QList<QSslError> & )),
-                 this,
-                 SLOT(sslErrorHandler(QNetworkReply*, const QList<QSslError> & )));
-                QSslConfiguration sslCfg = QSslConfiguration::defaultConfiguration();
-                QList<QSslCertificate> ca_list = sslCfg.caCertificates();
-                QList<QSslCertificate> ca_new = QSslCertificate::fromPath("c:/global.pem");
-                ca_list += ca_new;
-
-                sslCfg.setCaCertificates(ca_list);
-                sslCfg.setProtocol(QSsl::AnyProtocol);
-                QSslConfiguration::setDefaultConfiguration(sslCfg);
-    ui->twitter->load(QUrl("http://sterlingcoin.org.uk/feed.html"));
-    ui->twitter->show();
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
@@ -146,8 +134,121 @@ OverviewPage::OverviewPage(QWidget *parent) :
         ui->labelImmature->setStyleSheet(whiteLabelQSS);
         ui->labelTotal->setStyleSheet(whiteLabelQSS);
     }
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(timerCountDown()));
+    timer->start(1000);
 }
 
+int heightPrevious = -1;
+int connectionPrevious = -1;
+uint64_t volumePrevious = -1;
+double netPawratePrevious = -1;
+QString datePrevious = "";
+double hardnessPrevious2 = -1;
+int stakeminPrevious = -1;
+int stakemaxPrevious = -1;
+int seconds = 10;
+
+void OverviewPage::updateStatistics() {
+
+        double pHardness2 = GetDifficulty(GetLastBlockIndex(pindexBest, true));
+        int nHeight = pindexBest->nHeight;
+        double pNetrate = getBlockHashrate(nHeight);
+        uint64_t nMinWeight = 0, nMaxWeight = 0, nWeight = 0;
+        pwalletMain->GetStakeWeight(*pwalletMain, nMinWeight, nMaxWeight, nWeight);
+        uint64_t nNetworkWeight = GetPoSKernelPS();
+        uint64_t volume = ((pindexBest->nMoneySupply) / 100000000);
+        int peers = this->model2->getNumConnections();
+        QString height = QString::number(nHeight);
+        QString stakemin = QString::number(nMinWeight);
+        QString stakemax = QString::number(nNetworkWeight);
+        QString hardness2 = QString::number(pHardness2, 'f', 8);
+        QString netrate = QString::number(pNetrate, 'f', 0);
+        QString Qldate = model2->getLastBlockDate().toString();
+        QString QPeers = QString::number(peers);
+        QString qVolume =  QLocale(QLocale::English).toString((qlonglong)volume);
+
+    if (nHeight > heightPrevious) {
+        ui->heightBox->setText("<font color=\"LawnGreen\">" + height + "</font>");
+    } else {
+        ui->heightBox->setText(height);
+    }
+
+    if (stakemin.toInt() > stakeminPrevious) {
+        ui->minBox->setText("<font color=\"LawnGreen\">" + stakemin + "</font>");
+    } else if (stakemin.toInt() < stakeminPrevious) {
+        ui->minBox->setText("<font color=\"OrangeRed\">" + stakemin + "</font>");
+    } else {
+        ui->minBox->setText(stakemin);
+    }
+
+    if (stakemax.toInt() > stakemaxPrevious) {
+        ui->maxBox->setText("<font color=\"LawnGreen\">" + stakemax + "</font>");
+    } else if (stakemax.toInt() < stakemaxPrevious) {
+        ui->maxBox->setText("<font color=\"OrangeRed\">" + stakemax + "</font>");
+    } else {
+        ui->maxBox->setText(stakemax);
+    }
+
+    if (pHardness2 > hardnessPrevious2) {
+        ui->diffBox2->setText("<font color=\"LawnGreen\">" + hardness2 + "</font>");
+    } else if (pHardness2 < hardnessPrevious2) {
+        ui->diffBox2->setText("<font color=\"OrangeRed\">" + hardness2 + "</font>");
+    } else {
+        ui->diffBox2->setText(hardness2);
+    }
+
+    if (pNetrate > netPawratePrevious) {
+        ui->diffBox2_2->setText("<font color=\"LawnGreen\">" + netrate + "</font>");
+    } else if (pHardness2 < hardnessPrevious2) {
+        ui->diffBox2_2->setText("<font color=\"OrangeRed\">" + netrate + "</font>");
+    } else {
+        ui->diffBox2_2->setText(netrate);
+    }
+
+    if (Qldate != datePrevious) {
+        ui->localBox->setText("<font color=\"LawnGreen\">" + Qldate + "</font>");
+    } else {
+        ui->localBox->setText(Qldate);
+    }
+
+    if (peers > connectionPrevious) {
+        ui->connectionBox->setText("<font color=\"LawnGreen\">" + QPeers + "</font>");
+    } else if (peers < connectionPrevious) {
+        ui->connectionBox->setText("<font color=\"OrangeRed\">" + QPeers + "</font>");
+    } else {
+        ui->connectionBox->setText(QPeers);
+    }
+
+    if (volume != volumePrevious) {
+        ui->volumeBox->setText("<font color=\"LawnGreen\">" + qVolume + " SLG" + "</font>");
+    } else {
+        ui->volumeBox->setText(qVolume + " SLG");
+    }
+
+    updatePrevious(nHeight, nMinWeight, nNetworkWeight, pHardness2, pNetrate, Qldate, peers, volume);
+}
+
+void OverviewPage::updatePrevious(int nHeight, int nMinWeight, int nNetworkWeight, double pHardness2, double pNetrate, QString Qldate, int peers, int volume) {
+    heightPrevious = nHeight;
+    stakeminPrevious = nMinWeight;
+    stakemaxPrevious = nNetworkWeight;
+    hardnessPrevious2 = pHardness2;
+    netPawratePrevious = pNetrate;
+    datePrevious = Qldate;
+    connectionPrevious = peers;
+    volumePrevious = volume;
+}
+
+void OverviewPage::timerCountDown()
+{
+    seconds = seconds - 1;
+    if (seconds == 0)
+    {
+        updateStatistics();
+        seconds = 10;
+    }
+}
 
 void OverviewPage::handleTransactionClicked(const QModelIndex &index)
 {
@@ -158,10 +259,6 @@ void OverviewPage::handleTransactionClicked(const QModelIndex &index)
 OverviewPage::~OverviewPage()
 {
     delete ui;
-}
-void OverviewPage::reloadTwitter()
-{
-    ui->twitter->load(QUrl("http://sterlingcoin.org.uk/feed.html"));
 }
 
 void OverviewPage::setBalance(qint64 balance, qint64 stake, qint64 unconfirmedBalance, qint64 immatureBalance)
@@ -232,7 +329,6 @@ void OverviewPage::setModel(WalletModel *model)
         {
             ui->unlockWalletButton->setDisabled(true);
             ui->unlockWalletButton->setText(QString("Wallet is not encrypted!"));
-
         }
 
         else
@@ -242,8 +338,14 @@ void OverviewPage::setModel(WalletModel *model)
         connect(ui->unlockWalletButton, SIGNAL(clicked()), this, SLOT(unlockWallet()));
     }
 
-    // update the display unit, to not use the default ("BTC")
+    // update the display unit, to not use the default ("SLG")
     updateDisplayUnit();
+}
+
+void OverviewPage::setModel2(ClientModel *model2)
+{
+    //used for stats
+    this->model2 = model2;
 }
 
 void OverviewPage::updateDisplayUnit()
@@ -258,15 +360,6 @@ void OverviewPage::updateDisplayUnit()
 
         ui->listTransactions->update();
     }
-}
-
-void OverviewPage::sslErrorHandler(QNetworkReply *reply, const QList<QSslError> & errors )
-{
-    qDebug() << "sslErrorHandler:";
-    foreach (QSslError err, errors)
-      qDebug() << "ssl error: " << err;
-
-    reply->ignoreSslErrors();
 }
 
 void OverviewPage::showOutOfSyncWarning(bool fShow)

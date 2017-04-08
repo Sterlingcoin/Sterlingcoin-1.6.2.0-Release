@@ -3,26 +3,20 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
-#include <QWebFrame>
-#include <QWebElement>
 
 #include <stdint.h>
 
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
-class MessageModel;
 class TransactionView;
 class OverviewPage;
-class StatisticsPage;
 class BlockBrowser;
 class AddressBookPage;
-class MessagePage;
 class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
-class tradingDialog;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -56,8 +50,6 @@ public:
     */
     void setWalletModel(WalletModel *walletModel);
 
-    void setMessageModel(MessageModel *messageModel);
-
     /// Get window identifier of QMainWindow (BitcoinGUI)
     WId getMainWinId() const;
 
@@ -70,7 +62,6 @@ protected:
 private:
     ClientModel *clientModel;
     WalletModel *walletModel;
-    MessageModel *messageModel;
 
     QStackedWidget *centralWidget;
 
@@ -80,11 +71,7 @@ private:
     AddressBookPage *receiveCoinsPage;
     QWidget *transactionsPage;
     AddressBookPage *addressBookPage;
-    MessagePage *messagePage;
-    tradingDialog   *tradingDialogPage;
-    QWidget *fiatPage;
     BlockBrowser *blockBrowser;
-    StatisticsPage *statisticsPage;  
 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
@@ -95,15 +82,11 @@ private:
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
-    QAction *poolAction;
     QAction *blockAction;
     QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
-    QAction *fiatAction;
-    QAction *statisticsAction;
     QAction *addressBookAction;
-    QAction *messageAction;
     QAction *signMessageAction;
     QAction *verifyMessageAction;
     QAction *signMessageAction2;
@@ -120,7 +103,6 @@ private:
     QAction *lockWalletAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
-    QAction *TradingAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -128,10 +110,6 @@ private:
     RPCConsole *rpcConsole;
 
     QMovie *syncIconMovie;
-
-    bool fiatInit;
-
-    QWebFrame * fiatFrame;
 
     uint64_t nWeight;
     
@@ -180,16 +158,8 @@ private slots:
     void gotoHistoryPage();
     /** Switch to address book page */
     void gotoAddressBookPage();
-    /** Switch to message page */
-    void gotoMessagePage();
-    /** Switch to trading page */
-    void gotoTradingPage();
-    /** Switch to FiatPage*/
-    void gotoFiatPage();
     /** Switch to block explorer*/
     void gotoBlockBrowser();
-    /** Switch to Statistics Page*/
-    void gotoStatisticsPage();
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
     /** Show Sign/Verify Message dialog and switch to verify message tab */
@@ -207,11 +177,6 @@ private slots:
         The new items are those between start and end inclusive, under the given parent item.
     */
     void incomingTransaction(const QModelIndex & parent, int start, int end);
-     /** Show incoming message notification for new messages.
-
-        The new items are those between start and end inclusive, under the given parent item.
-    */
-    void incomingMessage(const QModelIndex & parent, int start, int end);
     /** Encrypt the wallet */
     void encryptWallet(bool status);
     /** Backup the wallet */

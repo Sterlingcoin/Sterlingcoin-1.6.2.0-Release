@@ -39,26 +39,21 @@
         <file alias="debugwindow">res/icons/debugwindow.png</file>
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
-        <file alias="bitcoin">res/icons/sterlingcoin.png</file>
-        <file alias="bitcoin_testnet">res/icons/sterlingcoin_testnet.png</file>
+        <file alias="sterlingcoin">res/icons/sterlingcoin.png</file>
+        <file alias="sterlingcoin_testnet">res/icons/sterlingcoin_testnet.png</file>
         <file alias="toolbar">res/icons/Sterlingcoin_Round_NO_BG_16x16x32.png</file>
         <file alias="toolbar_testnet">res/icons/Sterlingcoin_Round_NO_BG_16x16x32_testnet.png</file>
-        <file>res/icons/graph.png</file>
-        <file>res/icons/main.png</file>
-        <file>res/icons/update.png</file>
-        <file>res/icons/bittrex-header.png</file>
-        <file alias="markets">res/icons/markets.png</file>
         <file alias="block">res/icons/block.png</file>
         <file>res/icons/explorer-header.png</file>
-        <file alias="trading">res/icons/trade.png</file>
-        <file alias="fiat">res/icons/fiat.png</file>
         <file alias="statistics">res/icons/statistics.png</file>
-        <file alias="social">res/icons/social.png</file>
+        <file alias="qtlogo">res/icons/qtlogo.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
+        <file alias="splash_testnet">res/images/splash_testnet.png</file>
         <file alias="Wallet_Logo">res/images/Wallet_Logo.png</file>
+        <file alias="bridge">res/images/bridge.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
@@ -94,6 +89,7 @@
         <file alias="pl">locale/bitcoin_pl.qm</file>
         <file alias="pt_BR">locale/bitcoin_pt_BR.qm</file>
         <file alias="pt_PT">locale/bitcoin_pt_PT.qm</file>
+        <file alias="ro_RO">locale/bitcoin_ro_RO.qm</file>
         <file alias="ru">locale/bitcoin_ru.qm</file>
         <file alias="sk">locale/bitcoin_sk.qm</file>
         <file alias="sl_SI">locale/bitcoin_sl_SI.qm</file>
