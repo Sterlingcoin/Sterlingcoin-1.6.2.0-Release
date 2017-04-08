@@ -507,6 +507,9 @@
      <height>64</height>
     </rect>
    </property>
+   <property name="toolTip">
+    <string>The cryptocurrency of and from the UK &amp; British Isles for the world</string>
+   </property>
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
@@ -2051,7 +2054,7 @@ color: rgb(255,255,255);</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
+      <item row="4" column="0">
        <widget class="QLabel" name="labelTotalText">
         <property name="palette">
          <palette>
@@ -2182,7 +2185,7 @@ color: rgb(255,255,255);</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="1">
+      <item row="4" column="1">
        <widget class="QLabel" name="labelTotal">
         <property name="palette">
          <palette>
@@ -2325,28 +2328,6 @@ color: rgb(255,255,255);</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0" colspan="2">
-       <widget class="Line" name="line">
-        <property name="maximumSize">
-         <size>
-          <width>200</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(138,138,138)</string>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Plain</enum>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
@@ -3296,9 +3277,9 @@ color: rgb(255,255,255);</string>
    <property name="geometry">
     <rect>
      <x>9</x>
-     <y>289</y>
+     <y>309</y>
      <width>461</width>
-     <height>271</height>
+     <height>251</height>
     </rect>
    </property>
    <property name="acceptDrops">
@@ -6133,9 +6114,9 @@ color: rgb(255,255,255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>-9</y>
       <width>171</width>
-      <height>22</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="palette">
@@ -6258,7 +6239,7 @@ color: rgb(255,255,255);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>11</pointsize>
       <weight>75</weight>
       <bold>true</bold>
       <kerning>false</kerning>
@@ -6671,7 +6652,7 @@ color: rgb(255,255,255);</string>
      <bool>false</bool>
     </property>
     <property name="toolTip">
-     <string>Network hash rate</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Sterlingcoin network hash rate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
