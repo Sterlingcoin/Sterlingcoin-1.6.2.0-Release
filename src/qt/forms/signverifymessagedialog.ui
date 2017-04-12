@@ -1631,6 +1631,9 @@
            <property name="wordWrap">
             <bool>true</bool>
            </property>
+           <property name="styleSheet">
+            <string notr="true">background: transparent;</string>
+           </property>
           </widget>
          </item>
          <item>
