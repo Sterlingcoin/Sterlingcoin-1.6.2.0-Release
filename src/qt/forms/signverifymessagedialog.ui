@@ -664,7 +664,7 @@
       <string notr="true">background-color: rgb(138, 138, 138);</string>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabSignMessage">
       <attribute name="title">
@@ -840,8 +840,7 @@
             <string>The address to sign the message with (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true"></string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -896,8 +895,7 @@ color: rgb(255,255,255);</string>
           <string>Enter the message you want to sign here</string>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+          <string notr="true">background: transparent;</string>
          </property>
         </widget>
        </item>
@@ -1086,8 +1084,7 @@ color: rgb(255,255,255);</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true"></string>
            </property>
            <property name="readOnly">
             <bool>true</bool>
@@ -1374,8 +1371,7 @@ color: rgb(255,255,255);</string>
             <string>Sign the message to prove you own this Sterlingcoin address</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true">background: transparent;</string>
            </property>
            <property name="text">
             <string>&amp;Sign Message</string>
@@ -1594,8 +1590,7 @@ color: rgb(255,255,255);</string>
             <string>Reset all sign message fields</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true">background: transparent;</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
@@ -2061,8 +2056,7 @@ color: rgb(255,255,255);</string>
             <string>The address the message was signed with (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true"></string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -2320,8 +2314,7 @@ color: rgb(255,255,255);</string>
           </palette>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+          <string notr="true">background: transparent;</string>
          </property>
         </widget>
        </item>
@@ -2554,8 +2547,7 @@ color: rgb(255,255,255);</string>
           </palette>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+          <string notr="true"></string>
          </property>
         </widget>
        </item>
@@ -2766,8 +2758,7 @@ color: rgb(255,255,255);</string>
             <string>Verify the message to ensure it was signed with the specified Sterlingcoin address</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true">background: transparent;</string>
            </property>
            <property name="text">
             <string>&amp;Verify Message</string>
@@ -2986,8 +2977,7 @@ color: rgb(255,255,255);</string>
             <string>Reset all verify message fields</string>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(178,178,178);
-color: rgb(255,255,255);</string>
+            <string notr="true">background: transparent;</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
