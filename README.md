@@ -1,4 +1,4 @@
-Sterlingcoin Version 1.6.0.0 Release
+Sterlingcoin Version 1.6.0.1 Release
 
 POD-CryptoAsian
 
