@@ -260,7 +260,7 @@ int main(int argc, char *argv[])
                 ipcInit(argc, argv);
 
                 #if defined(Q_OS_WIN) && QT_VERSION >= 0x050000
-                WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("HoboNickels shutting down. Please wait..."), (HWND)window.getMainWinId());
+                WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("Sterlingcoin shutting down. Please wait..."), (HWND)window.getMainWinId());
                 #endif
 
                 app.exec();
