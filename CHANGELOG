@@ -1,4 +1,11 @@
+**Sterlingcoin 1.6.1 Release CHANGELOG**
+------------------------------
+Add -zapwallettxes start argument to remove unaccepted stake rewards that would.
+New checkpoints.
+Correct Windows shutdown warning to read "Sterlingcoin".
+
 **Sterlingcoin 1.6 Release CHANGELOG**
+------------------------------
 Update alert private key and sync checkpoint server private key
 Remove un-used bits (fiat, market data, twitter, messaging, ect). Delist Bittrex from the wallet.
 Remove webkit dependency. Remove dependecies for messaging.

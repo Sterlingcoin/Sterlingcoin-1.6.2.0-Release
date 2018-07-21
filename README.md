@@ -1,13 +1,11 @@
-Sterlingcoin Version 1.6.0.1 Release
-
-POD-CryptoAsian
+Sterlingcoin Version 1.6.1.1 Release
 
 Sterlingcoin integration/staging tree
 ================================
 
 http://www.sterlingcoin.org.uk
 
-Copyright (c) 2014 - 2017 Sterlingcoin Developers
+Copyright (c) 2014 - 2018 Sterlingcoin Developers
 
 What is Sterlingcoin?
 The cryptocurrency of and from the UK & British Isles for the world.

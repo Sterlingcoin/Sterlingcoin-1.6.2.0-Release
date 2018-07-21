@@ -1,8 +1,8 @@
 #############################################################################################################################
 TEMPLATE = app
-TARGET = Sterlingcoin-v1.6
-macx:TARGET = "Sterlingcoin-v1.6"
-VERSION = 1.6.0.0
+TARGET = Sterlingcoin-v1.6.1
+macx:TARGET = "Sterlingcoin-v1.6.1"
+VERSION = 1.6.1.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
