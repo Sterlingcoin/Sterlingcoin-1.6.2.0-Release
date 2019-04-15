@@ -5,7 +5,7 @@ Sterlingcoin integration/staging tree
 
 http://www.sterlingcoin.org.uk
 
-Copyright (c) 2014 - 2018 Sterlingcoin Developers
+Copyright (c) 2014 - 2019 Sterlingcoin Developers
 
 What is Sterlingcoin?
 The cryptocurrency of and from the UK & British Isles for the world.
