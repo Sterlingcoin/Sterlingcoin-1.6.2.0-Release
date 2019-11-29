@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Sterlingcoin developers
+// Copyright (c) 2014-2020 The Sterlingcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,6 +45,7 @@ static std::map<int, unsigned int> mapStakeModifierCheckpoints =
         ( 965690, 0xc414072fu )
         (1000000, 0x741054a5u )
         (1020000, 0x0d3875feu )
+        (1336963, 0xa496cfbfu )
     ;
 
 // Hard checkpoints of stake modifiers to ensure they are deterministic (testNet)
