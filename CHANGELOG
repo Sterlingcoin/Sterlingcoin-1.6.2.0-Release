@@ -1,3 +1,8 @@
+**Sterlingcoin 1.6.2 Release CHANGELOG**
+------------------------------
+New checkpoint.
+Copyright year 2020.
+
 **Sterlingcoin 1.6.1 Release CHANGELOG**
 ------------------------------
 Add -zapwallettxes start argument to remove unaccepted stake rewards that would.
