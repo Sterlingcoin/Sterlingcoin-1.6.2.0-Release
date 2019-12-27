@@ -1,11 +1,13 @@
-Sterlingcoin Version 1.6.1.1 Release
+![Alt text](src/qt/res/images/Wallet_Logo.png)
+
+Sterlingcoin Version 1.6.2.0 Release
 
 Sterlingcoin integration/staging tree
 ================================
 
 http://www.sterlingcoin.org.uk
 
-Copyright (c) 2014 - 2019 Sterlingcoin Developers
+Copyright (c) 2014 - 2020 Sterlingcoin Developers
 
 What is Sterlingcoin?
 The cryptocurrency of and from the UK & British Isles for the world.
